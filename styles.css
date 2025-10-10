@@ -54,12 +54,16 @@ p {
 
 }
 
+
+
 /* Wrapper til hele siden */
 .flexWrapper {
     display: flex;
     flex-direction: column;
     margin: 0px;
 }
+
+
 
 header {
     box-sizing: border-box;
@@ -72,13 +76,19 @@ header {
     background-color: var(--background-color);
 }
 
+
+
 footer {
     box-sizing: border-box;
     display: grid;
-    grid-template-areas: '3fr 1fr';
+    grid-template-areas: 
+    'brand brand brand brand some'
+    'brand brand brand brand some'
+    'brand brand brand brand some';
     width: 100%;
-    height: 249px;
-    padding: 32px 30px 9px;
+    min-height: 249px;
+    height: auto;
+    padding: 32px 0px 9px;
     background-color: var(--footer-color);
 
     p {
@@ -91,17 +101,36 @@ footer {
 }
 
 /* En kasse til både logoet og teksten under logoet */
-.footer__logo {
-    width: 84%;
-    margin: 0px 82px 40px 0px;
+.footer__branding {
+    grid-area: brand;
+    width: 100%;
+    margin: 0px;
+    padding-left: 30px;
+    overflow: hidden;
 
+}
+
+/* CSS til logoet */
+.footer__logo {
+    width: 100%;
+    height: auto;
 }
 
 /* En kasse til social medie ikoner */
-.footer__icon {
-    width: 30px;
-    margin: 94px 0px 40px 0px;
+.footer__some {
+    grid-area: some;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-right: 30px;
+
+    i {
+        margin: 0em 1em 1em;
+        color: var(--text-color-2);
+    }
+
 }
+
 
 /* En farvet kasse til vores indhold */
 .contentBox {
@@ -167,6 +196,8 @@ footer {
     border-radius: 100%;
     overflow: hidden;
 }
+
+
 
 @media only screen and (min-width: 768px) {
     header {
