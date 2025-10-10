@@ -98,10 +98,6 @@ header {
     display: none;
 }
 
-.header__nav_button {
-    
-}
-
 .header__tilmeld {
     display: none;
 }
@@ -231,6 +227,7 @@ footer {
     header {
         min-height: 114px;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .header__menu {
@@ -239,21 +236,34 @@ footer {
 
     .header__nav {
         display: inline;
+    }
+
+    .header__nav > * {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
-        font-size: 1.2rem;
-        margin-top: 0;
+        font-size: 1.5rem;
+        margin-left: 1.2em;
         color: var(--black);
+    }
+
+    .header__nav a {
+        text-decoration: none;
+    }
+
+    .header__nav a:hover {
+        text-decoration: underline;
     }
 
     .header__tilmeld {
         display: inline;
+        position: fixed;
+        right: 60px;
         border-radius: 21px;
         background-color: var(--button-color);
-        align-self: flex-end;
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.2rem;
+        padding: 16px 26px;
         margin-top: 0;
         color: var(--text-color-2);
         text-shadow: 1px 1px 1px var(--black);
