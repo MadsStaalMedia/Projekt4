@@ -5,6 +5,7 @@
     --text-color-2: #FFFFFF;
     --box-color-1: #4C3140;
     --box-color-2: #3D2733;
+    --footer-color: #052A39;
     --black: #000000;
 }
 
@@ -71,11 +72,42 @@ header {
     background-color: var(--background-color);
 }
 
+footer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: '3fr 1fr';
+    width: 100%;
+    height: 249px;
+    padding: 32px 30px 9px;
+    background-color: var(--footer-color);
+
+    p {
+        color: var(--text-color-2);
+        text-shadow: 1px 1px 1px var(--black);
+        font-style: italic;
+        font-weight: 250;
+        line-height: 1.3rem;
+    }
+}
+
+/* En kasse til både logoet og teksten under logoet */
+.footer__logo {
+    width: 84%;
+    margin: 0px 82px 40px 0px;
+
+}
+
+/* En kasse til social medie ikoner */
+.footer__icon {
+    width: 30px;
+    margin: 94px 0px 40px 0px;
+}
+
 /* En farvet kasse til vores indhold */
 .contentBox {
     align-self: center;
     box-sizing: border-box;
-    width: 90%;
+    width: calc(100% - 60px);
     margin: 38px 30px 0px;
     padding: 30px 30px;
     background-color: var(--box-color-1);
@@ -99,7 +131,7 @@ header {
     '1fr 1fr';
     align-self: center;
     box-sizing: border-box;
-    width: 90%;
+    width: calc(100% - 60px);
     margin: 0px 30px 38px;
     padding: 30px 30px;
     background-color: var(--box-color-2);
