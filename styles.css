@@ -1,6 +1,7 @@
 :root {
     --background-color: #FFFCFA;
-    --h1-color: #042A39;
+    --text-color-1: #042A39;
+    --text-color-2: #FFFFFF;
 }
 
 body {
@@ -12,16 +13,28 @@ h1 {
     font-family:  "adelle-sans", "roboto", Helvetica, sans-serif;
     font-weight: 700;
     font-size: 4.6rem;
-    line-height: 80px;
-    color: var(--h1-color);
+    line-height: 5rem;
+    color: var(--text-color-1);
     text-align: center;
 }
 
 h2 {
+    font-family: "adelle", "ltc-bodoni-175", Georgia, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: var(--text-color-1);
+    text-align: center;
 
 }
 
 p {
+    font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 165%;
+    margin-top: 0;
+    color: var(--text-color-1);
 
 }
 
