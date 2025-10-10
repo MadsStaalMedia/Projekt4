@@ -67,6 +67,11 @@ p {
 
 header {
     box-sizing: border-box;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0px;
     width: 100%;
     min-height: 49px;
     height: auto;
@@ -77,6 +82,16 @@ header {
     background-color: var(--background-color);
 }
 
+.header__menu {
+    position: relative;
+    right: 10px;
+}
+
+.header__logo {
+    position: relative;
+    left: 10px;
+    
+}
 
 
 footer {
@@ -202,6 +217,10 @@ footer {
 @media only screen and (min-width: 768px) {
     header {
         min-height: 114px;
+    }
+
+    .header__menu {
+        display: none;
     }
 
     footer {
