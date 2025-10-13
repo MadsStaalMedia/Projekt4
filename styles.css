@@ -145,6 +145,9 @@ footer {
 }
 
 
+.fontpage {
+}
+
 /* En farvet cirkel til tekst */
 .contentCircle {
     align-self: left;
@@ -152,11 +155,11 @@ footer {
     width: 88%;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
-    margin: 30px auto 30px -37px;
-    padding: 22% 45px 37px;
+    margin: 30px 0px 30px -37px;
     background-color: var(--box-color-1);
 
     h1 {
+        padding: 20% 10% 30px;
         font-size: 2rem;
         font-weight: 300;
         color: var(--text-color-1);
@@ -164,12 +167,17 @@ footer {
     }
     
     h3 {
+        padding: 0 10%;
         font-size: 1.2rem;
         color: var(--text-color-1);
         text-shadow: 1px 1px 1px var(--black);
         font-weight: 200;
         line-height: 1.5em;
     }
+}
+
+.frontpage__img {
+    display: none;
 }
 
 
@@ -309,4 +317,31 @@ footer {
     footer {
         min-height: 220px;
     }
+
+    .contentCircle {
+        max-width: 600px;
+        width: 30%;
+        float: left;
+    }
+
+    .frontpage__img {
+        margin: 30px 10px;
+        display: initial;
+        align-self: right;
+        float: right;
+        width: 30%;
+        height: auto;
+    }
+
+    .frontpage__img * {
+        width: 100%;
+        height: auto;
+    }
+
+    .videoPlay {
+        float: right;
+        width: 30%;
+    }
+
+    
 }
