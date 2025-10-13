@@ -104,10 +104,8 @@ header {
 
 footer {
     box-sizing: border-box;
-    display: grid;
-    grid-template-areas: 
-    'brand brand brand brand some';
-    column-gap: 2em;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 249px;
     height: auto;
@@ -123,32 +121,23 @@ footer {
     }
 }
 
-/* En kasse til både logoet og teksten under logoet */
+/* En kasse til  logoet under logoet */
 .footer__branding {
-    grid-area: brand;
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-
-}
-
-/* CSS til logoet */
-.footer__logo {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1em;
+    display: block;
+    width: fit-content;
+    margin: 1em auto 2em;
 }
 
 /* En kasse til social medie ikoner */
 .footer__some {
-    grid-area: some;
     width: 100%;
     height: 100%;
     margin: 0px;
     text-align: center;
 
     i {
-        margin-bottom: 1em;
+        margin: 0em auto 1em;
+        padding: 0px 0.2em;
         color: var(--text-color-2);
     }
 
@@ -182,24 +171,17 @@ footer {
 .profileBox {
     display: grid;
     grid-template-areas: 
+    '2fr'
     '1fr 1fr'
     '1fr 1fr';
     align-self: center;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: var(--black);
     box-sizing: border-box;
     width: calc(100% - 60px);
     margin: 0px 30px 38px;
     padding: 37px;
-    background-color: var(--box-color-2);
-
-    h3 {
-        color: var(--text-color-2);
-        text-shadow: 1px 1px 1px var(--black);
-    }
-    
-    p {
-        color: var(--text-color-2);
-        text-shadow: 1px 1px 1px var(--black);
-    }
 }
 
 /* En kasse til billeder og citater */
