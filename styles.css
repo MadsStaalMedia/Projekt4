@@ -178,8 +178,12 @@ footer {
 
 
 /* CSS til videoafspilleren, så den er responsiv */
-.videoPlay {
+
+.videoContainer {
     align-self: center;
+}
+
+.videoPlay {
     min-width: 240px;
     width: 80%;
     height: auto;
@@ -334,10 +338,18 @@ footer {
         height: auto;
     }
 
+    .videoContainer {
+        align-self: auto;
+
+        p {
+            padding-left: 20%;
+        }
+    }
+
     .videoPlay {
         float: right;
         width: 30%;
-        margin-right: 30px;
+        margin-right: 20%;
     }
 
     
