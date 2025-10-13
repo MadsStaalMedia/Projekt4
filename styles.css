@@ -3,8 +3,9 @@
     --background-color: #FFFCFA;
     --button-color: #80DDA9;
     --text-color-1: #FFFFFF;
+    --text-color-2: #000000;
     --box-color-1: #4C3140;
-    --box-color-2: #3D2733;
+    --box-color-2: #4C314038;
     --black: #000000;
 }
 
@@ -15,19 +16,19 @@ body {
 
 h1 {
     font-family:  "adelle-sans", "roboto", Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2.2rem;
     line-height: 110%;
-    color: var(--black);
+    color: var(--text-color-2);
     text-align: center;
 }
 
 h2 {
     font-family: "adelle", "ltc-bodoni-175", Georgia, serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 110%;
-    color: var(--black);
+    color: var(--text-color-2);
     text-align: center;
 
 }
@@ -38,7 +39,7 @@ h3 {
     font-size: 1rem;
     line-height: 200%;
     margin-top: 0;
-    color: var(--black);
+    color: var(--text-color-2);
     text-align: center;
 
 }
@@ -49,7 +50,8 @@ p {
     font-size: 1rem;
     line-height: 165%;
     margin-top: 0;
-    color: var(--black);
+    padding: 0px 10%;
+    color: var(--text-color-2);
 
 }
 
@@ -177,13 +179,10 @@ footer {
     min-width: 240px;
     width: 80%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.videoText {
-    padding: 10px 10%;
-}
-
-.tilmeld {
+.signup {
     align-self: center;
     width: 50%;
     border-radius: 21px;
@@ -196,6 +195,7 @@ footer {
     color: var(--text-color-1);
     text-shadow: 2px 2px 2px var(--black);    
 }
+
 
 /* En farvet kasse til vores billeder og citater */
 .profileBox {
@@ -225,6 +225,8 @@ footer {
     padding: 0px;
 
     p {
+        padding-left: 0px;
+        padding-right: 0px;
         font-style: italic;
         font-weight: 250;
         line-height: 1.3rem;
@@ -237,6 +239,23 @@ footer {
     height: 120px;
     border-radius: 100%;
     overflow: hidden;
+}
+
+
+.activityBox {
+    background-color: var(--box-color-2);
+    width: 100%;
+    min-height: 100px;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.signupBox {
+    background-color: var(--box-color-1);
+    width: 100%;
+    min-height: 100px;
 }
 
 
@@ -272,7 +291,7 @@ footer {
         text-decoration: underline;
     }
 
-    .header__tilmeld {
+    .header__signup {
         display: inline;
         position: fixed;
         right: 60px;
