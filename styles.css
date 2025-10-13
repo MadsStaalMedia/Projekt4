@@ -112,7 +112,7 @@ footer {
     background-color: var(--box-color-1);
 
     p {
-        color: var(--text-color-2);
+        color: var(--text-color-1);
         text-shadow: 1px 1px 1px var(--black);
         font-style: italic;
         font-weight: 250;
@@ -137,7 +137,7 @@ footer {
     i {
         margin: 0em auto 1em;
         padding: 0px 0.2em;
-        color: var(--text-color-2);
+        color: var(--text-color-1);
     }
 
 }
@@ -151,18 +151,22 @@ footer {
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     margin: 30px auto 30px -37px;
-    padding: 20% 45px 37px;
+    padding: 22% 45px 37px;
     background-color: var(--box-color-1);
 
     h1 {
         font-size: 2rem;
-        color: var(--text-color-2);
+        font-weight: 300;
+        color: var(--text-color-1);
         text-shadow: 1px 1px 1px var(--black);
     }
     
     h3 {
-        color: var(--text-color-2);
+        font-size: 1.2rem;
+        color: var(--text-color-1);
         text-shadow: 1px 1px 1px var(--black);
+        font-weight: 200;
+        line-height: 1.5em;
     }
 }
 
