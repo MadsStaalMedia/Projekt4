@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 438 438" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.05463,0,0,1.05463,-29.9507,-29.2025)">
+        <circle cx="235.584" cy="234.875" r="201.424" style="fill:rgb(4,42,57);"/>
+    </g>
+    <g transform="matrix(1.05463,0,0,1.05463,-29.9507,-29.2025)">
+        <path d="M235.584,27.69C349.933,27.69 442.769,120.526 442.769,234.875C442.769,349.223 349.933,442.06 235.584,442.06C121.236,442.06 28.399,349.223 28.399,234.875C28.399,120.526 121.236,27.69 235.584,27.69ZM235.584,39.213C127.595,39.213 39.922,126.886 39.922,234.875C39.922,342.864 127.595,430.537 235.584,430.537C343.573,430.537 431.246,342.864 431.246,234.875C431.246,126.886 343.573,39.213 235.584,39.213Z" style="fill:white;"/>
+    </g>
+    <g id="Netværl" transform="matrix(5.15367,0,0,5.15367,-928.994,-504.242)">
+        <g transform="matrix(1.0332,0,0,1.0332,-18.7788,-6.52354)">
+            <circle cx="233.677" cy="142.047" r="23.723" style="fill:none;stroke:white;stroke-width:2.35px;"/>
+        </g>
+        <path d="M214.471,128.064L214.488,135.483" style="fill:none;stroke:white;stroke-width:2.43px;"/>
+        <g transform="matrix(1,0,0,1,-0.0243996,0)">
+            <path d="M231.565,128.064L227.271,131.773L231.465,135.483" style="fill:none;stroke:white;stroke-width:2.43px;"/>
+        </g>
+        <path d="M211.832,142.167C209.41,161.798 236.537,161.819 233.927,142.09L211.832,142.167Z" style="fill:none;stroke:white;stroke-width:2.43px;"/>
+    </g>
+</svg>
