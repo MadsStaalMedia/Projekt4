@@ -53,22 +53,25 @@ function eventDate() {
     }
 
     let secondMonth = new Date(date.getFullYear(),date.getMonth()+1,1);
-    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+2,0);
+    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+1,0);
 
     for (i = secondMonth.getDate(); i <= secondMonthFinal.getDate(); i++) {
 
-        if (firstDay.getDay() == 2 && secondMonth.getDate() < 8)  {
-            const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
+        if (secondMonth.getDay() == 2 && secondMonth.getDate() < 8 && date1set == 0)  {
+            const nextTuesday = secondMonth.getDate() + "/" + secondMonth.getMonth();
             document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
     
         }
 
-        if (firstDay.getDay() == 3 && secondMonth.getDate() + 7 > secondMonthFinal.getDate()) {
-            const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
+        if (secondMonth.getDay() == 3 && secondMonth.getDate() + 7 > secondMonthFinal.getDate() && date2set == 0) {
+            const lastWednesday = secondMonth.getDate() + "/" + secondMonth.getMonth();
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
         }
+
+        secondMonth.setDate(secondMonth.getDate + 1);
+    }
 
 }
