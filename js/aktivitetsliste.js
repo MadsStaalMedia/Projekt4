@@ -16,23 +16,26 @@ let eventDetail = document.getElementById("eventDetail");
 let date1set = 0;
 let date2set = 0;
 
-function seeEvent(x) {
-    document.getElementById("event"+x).scrollIntoView();
-}
-
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
-    eventList.innerHTML += '<button class="eventButton" onclick="seeEvent('+i+')">' + x + '</button>';
+    eventList.innerHTML += '<button class="eventButton" onclick="seeEvent('+ i + 1 +')">' + x + '</button>';
     if (i == events.length - 1) {
         eventDate();
     }
     
 }
 
+function seeEvent(x) {
+    let element = document.getElementById("event"+x);
+    element.scrollIntoView(true);
+}
+
 function eventDate() {
     let date = new Date();
     let firstDay = new Date(date.getFullYear(),date.getMonth(),1);
     let finalDay = new Date(date.getFullYear(),date.getMonth()+1,0);
+    let secondMonth = new Date(date.getFullYear(),date.getMonth()+1,1);
+    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+1,0);
 
     for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
@@ -52,22 +55,19 @@ function eventDate() {
         firstDay.setDate(firstDay.getDate() + 1);
     }
 
-    let secondMonth = new Date(date.getFullYear(),date.getMonth()+1,1);
-    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+1,0);
-
     for (i = secondMonth.getDate(); i <= secondMonthFinal.getDate(); i++) {
 
         if (secondMonth.getDay() == 2 && secondMonth.getDate() < 8 && date1set == 0)  {
-            const nextTuesday = secondMonth.getDate() + "/" + secondMonth.getMonth();
-            document.getElementById('event1date1').innerText += nextTuesday;
+            const nextTuesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
+            document.getElementById('event1date1').innerText += nextTuesday2;
             date1set = 1;
     
         }
 
         if (secondMonth.getDay() == 3 && secondMonth.getDate() + 7 > secondMonthFinal.getDate() && date2set == 0) {
-            const lastWednesday = secondMonth.getDate() + "/" + secondMonth.getMonth();
-            document.getElementById('event1date2').innerText += lastWednesday;
-            document.getElementById('event1date3').innerText += lastWednesday;
+            const lastWednesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
+            document.getElementById('event1date2').innerText += lastWednesday2;
+            document.getElementById('event1date3').innerText += lastWednesday2;
             date2set = 1;
         }
 
