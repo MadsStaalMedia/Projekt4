@@ -268,6 +268,14 @@ footer {
 }
 
 
+#eventList {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .eventButton {
     margin-top: 10px;
     min-width: 318px;
@@ -275,6 +283,11 @@ footer {
     height: 43px;
     background-color: var(--box-color-1);
     border-radius: 21px;
+
+    .eventButton__img {
+        position: relative;
+        left: 0px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
