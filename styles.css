@@ -98,7 +98,7 @@ header {
     display: none;
 }
 
-.header__tilmeld {
+.header__signup {
     display: none;
 }
 
@@ -268,6 +268,14 @@ footer {
 }
 
 
+.eventButton {
+    margin-top: 10px;
+    min-width: 318px;
+    width: 80%;
+    height: 43px;
+    background-color: var(--box-color-1);
+    border-radius: 21px;
+}
 
 @media only screen and (min-width: 768px) {
     header {
