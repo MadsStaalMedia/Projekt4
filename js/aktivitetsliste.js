@@ -45,7 +45,7 @@ function eventDate() {
             date1set = 1;
         }
 
-        if (firstDay.getDay() == 3 && firstDay.getDate() + 7 > finalDay.getDate() && firstDay.getDate() <= date.getDate()) {
+        if (firstDay.getDay() == 3 && firstDay.getDate() < finalDay.getDate() && firstDay.getDate() <= date.getDate()) {
             const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
@@ -59,15 +59,15 @@ function eventDate() {
 
         if (secondMonth.getDay() == 2 && secondMonth.getDate() < 8 && date1set == 0)  {
             const nextTuesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
-            document.getElementById('event1date1').innerText += nextTuesday2;
+            document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
     
         }
 
-        if (secondMonth.getDay() == 3 && secondMonth.getDate() + 7 > secondMonthFinal.getDate() && date2set == 0) {
+        if (secondMonth.getDay() == 3 && secondMonth.getDate() < secondMonthFinal.getDate() && date2set == 0) {
             const lastWednesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
-            document.getElementById('event1date2').innerText += lastWednesday2;
-            document.getElementById('event1date3').innerText += lastWednesday2;
+            document.getElementById('event1date2').innerText += lastWednesday;
+            document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
         }
 
