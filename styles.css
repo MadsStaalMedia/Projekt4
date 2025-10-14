@@ -302,6 +302,14 @@ footer {
     }
 }
 
+#eventDetail > * {
+    li{
+        list-style: none;
+    }
+}
+
+
+
 @media only screen and (min-width: 768px) {
     header {
         min-height: 114px;
@@ -368,7 +376,7 @@ footer {
         height: auto;
     }
 
-    .frontpageImg * {
+    .frontpageImg > * {
         width: 100%;
         height: auto;
     }

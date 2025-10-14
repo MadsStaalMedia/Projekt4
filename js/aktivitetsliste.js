@@ -27,12 +27,15 @@ function eventDate() {
     for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
         if (firstDay.getDay() == 2 && firstDay.getDate() < 8)  {
-        const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
-        document.getElementById('event1date1').innerText += nextTuesday;
-        console.log(nextTuesday);
+            const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
+            document.getElementById('event1date1').innerText += nextTuesday;
         }
 
-        if (firstDay.getDay() == 3 && firstDay.getDate() > finalDay.getDate - 7)
+        if (firstDay.getDay() == 3 && firstDay.getDate() + 7 > finalDay.getDate()) {
+            const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
+            document.getElementById('event1date4').innerText += lastWednesday;
+            document.getElementById('event1date6').innerText += lastWednesday;
+        }
 
         firstDay.setDate(firstDay.getDate() + 1);
     }
