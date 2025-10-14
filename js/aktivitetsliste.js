@@ -9,6 +9,8 @@ const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.sv
 
 const events = [netOd, streg, lego, klub, natur, netSve, cafe, halvtre];
 
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 let eventList = document.getElementById("eventList");
 
 let eventDetail = document.getElementById("eventDetail");
@@ -35,18 +37,24 @@ function eventDate() {
     let firstDay = new Date(date.getFullYear(),date.getMonth(),1);
     let finalDay = new Date(date.getFullYear(),date.getMonth()+1,0);
     let secondMonth = new Date(date.getFullYear(),date.getMonth()+1,1);
-    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+1,0);
+    let secondMonthFinal = new Date(secondMonth.getFullYear(),secondMonth.getMonth()+1,0);
+    let lastWeek = finalDay.getDate() - 7;
+    let lastWeekSecond = secondMonthFinal.getDate() - 7;
+
+    console.log(lastWeek);
+    console.log(lastWeekSecond);
+
 
     for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
-        if (firstDay.getDay() == 2 && firstDay.getDate() < 8 && firstDay.getDate() <= date.getDate())  {
-            const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
+        if (firstDay.getDay() == 2 && firstDay.getDate() < 8 && firstDay.getDate() <= date.getDate() && date1set == 0)  {
+            const nextTuesday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
         }
 
-        if (firstDay.getDay() == 3 && firstDay.getDate() < finalDay.getDate() && firstDay.getDate() <= date.getDate()) {
-            const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
+        if (firstDay.getDay() == 3 && firstDay.getDate() <= lastWeek && firstDay.getDate() <= date.getDate() && date2set == 0) {
+            const lastWednesday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
@@ -58,14 +66,14 @@ function eventDate() {
     for (i = secondMonth.getDate(); i <= secondMonthFinal.getDate(); i++) {
 
         if (secondMonth.getDay() == 2 && secondMonth.getDate() < 8 && date1set == 0)  {
-            const nextTuesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
+            const nextTuesday2 = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
     
         }
 
-        if (secondMonth.getDay() == 3 && secondMonth.getDate() < secondMonthFinal.getDate() && date2set == 0) {
-            const lastWednesday2 = secondMonth.getDate() + "/" + secondMonth.getMonth();
+        if (secondMonth.getDay() == 3 && secondMonth.getDate() <  lastWeekSecond  && date2set == 0) {
+            const lastWednesday2 = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
