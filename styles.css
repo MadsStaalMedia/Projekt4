@@ -280,6 +280,7 @@ footer {
 .eventButton {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 10px;
     min-width: 318px;
     width: 80%;
@@ -297,6 +298,7 @@ footer {
 
     p {
         color: var(--text-color-1);
+        line-height: normal;
     }
 }
 
