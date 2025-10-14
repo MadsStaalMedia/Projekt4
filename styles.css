@@ -274,19 +274,29 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .eventButton {
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
     min-width: 318px;
     width: 80%;
-    height: 43px;
+    height: 4em;
+    padding: 0;
     background-color: var(--box-color-1);
-    border-radius: 21px;
+    border-radius: 4em;
+    box-sizing: border-box;
+    border: var(--black) solid 1px;
 
     .eventButton__img {
-        position: relative;
-        left: 0px;
+        height: 100%;
+        width: auto;
+    }
+
+    p {
+        color: var(--text-color-1);
     }
 }
 
