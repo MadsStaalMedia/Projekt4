@@ -22,10 +22,9 @@ for (let i = 0; i < events.length ; i++) {
 function eventDate() {
     let date = new Date();
     let firstDay = new Date(date.getFullYear(),date.getMonth(),1);
-    console.log(firstDay);
+    let finalDay = new Date(date.getFullYear(),date.getMonth()+1,0);
 
-    for (i = firstDay.getDate(); i < 32; i++) {
-        console.log(i);
+    for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
         if (firstDay.getDay() == 2 && firstDay.getDate() < 8)  {
         const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
@@ -33,8 +32,9 @@ function eventDate() {
         console.log(nextTuesday);
         }
 
+        if (firstDay.getDay() == 3 && firstDay.getDate() > finalDay.getDate - 7)
+
         firstDay.setDate(firstDay.getDate() + 1);
-        console.log(firstDay);
     }
 
     
