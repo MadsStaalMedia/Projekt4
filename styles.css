@@ -320,6 +320,7 @@ footer {
     }
 
     .contentCircle {
+        margin: 30px 5%;
         max-width: 600px;
         width: 30%;
         float: left;
