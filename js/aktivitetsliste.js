@@ -24,10 +24,10 @@ function eventDate() {
     let firstDay = new Date(date.getFullYear(),date.getMonth(),1);
     console.log(firstDay);
 
-    for (i = firstDay.getDate(); i < 8; i++) {
+    for (i = firstDay.getDate(); i < 32; i++) {
         console.log(i);
 
-        if (firstDay.getDay() == 2) {
+        if (firstDay.getDay() == 2 && firstDay.getDate() < 8)  {
         const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
         document.getElementById('event1date1').innerText += nextTuesday;
         console.log(nextTuesday);
