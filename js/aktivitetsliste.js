@@ -19,7 +19,7 @@ for (let i = 0; i < events.length ; i++) {
     
 }
 
- function eventDate() {
+function eventDate() {
     let date = new Date();
     let firstDay = new Date(date.getFullYear(),date.getMonth(),1);
     console.log(firstDay);
@@ -28,7 +28,7 @@ for (let i = 0; i < events.length ; i++) {
         console.log(i);
 
         if (firstDay.getDay() == 2) {
-        const nextTuesday = firstDay.getDate() + firstDay.getMonth();
+        const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
         document.getElementById('event1date1').innerText += nextTuesday;
         console.log(nextTuesday);
         }
