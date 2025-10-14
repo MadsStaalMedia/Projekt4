@@ -13,9 +13,19 @@ let eventList = document.getElementById("eventList");
 
 let eventDetail = document.getElementById("eventDetail");
 
+let date1set = 0;
+let date2set = 0;
+
+function seeEvent(x) {
+    document.getElementById("event"+x).scrollIntoView();
+}
+
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
     eventList.innerHTML += '<button class="eventButton" onclick="seeEvent('+i+')">' + x + '</button>';
+    if (i == events.length - 1) {
+        eventDate();
+    }
     
 }
 
@@ -26,23 +36,39 @@ function eventDate() {
 
     for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
-        if (firstDay.getDay() == 2 && firstDay.getDate() < 8)  {
+        if (firstDay.getDay() == 2 && firstDay.getDate() < 8 && firstDay.getDate() <= date.getDate())  {
             const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
             document.getElementById('event1date1').innerText += nextTuesday;
+            date1set = 1;
         }
 
-        if (firstDay.getDay() == 3 && firstDay.getDate() + 7 > finalDay.getDate()) {
+        if (firstDay.getDay() == 3 && firstDay.getDate() + 7 > finalDay.getDate() && firstDay.getDate() <= date.getDate()) {
             const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
-            document.getElementById('event1date4').innerText += lastWednesday;
-            document.getElementById('event1date6').innerText += lastWednesday;
+            document.getElementById('event1date2').innerText += lastWednesday;
+            document.getElementById('event1date3').innerText += lastWednesday;
+            date2set = 1;
         }
 
         firstDay.setDate(firstDay.getDate() + 1);
     }
 
-    
-}
+    let secondMonth = new Date(date.getFullYear(),date.getMonth()+1,1);
+    let secondMonthFinal = new Date(secondMonth.getFullYear,secondMonth.getMonth+2,0);
 
-function seeEvent(x) {
-    document.getElementById("event"+x).scrollIntoView();
+    for (i = secondMonth.getDate(); i <= secondMonthFinal.getDate(); i++) {
+
+        if (firstDay.getDay() == 2 && secondMonth.getDate() < 8)  {
+            const nextTuesday = firstDay.getDate() + "/" + firstDay.getMonth();
+            document.getElementById('event1date1').innerText += nextTuesday;
+            date1set = 1;
+    
+        }
+
+        if (firstDay.getDay() == 3 && secondMonth.getDate() + 7 > secondMonthFinal.getDate()) {
+            const lastWednesday = firstDay.getDate() + "/" + firstDay.getMonth();
+            document.getElementById('event1date2').innerText += lastWednesday;
+            document.getElementById('event1date3').innerText += lastWednesday;
+            date2set = 1;
+        }
+
 }
