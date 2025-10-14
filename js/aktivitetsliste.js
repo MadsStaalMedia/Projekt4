@@ -47,13 +47,13 @@ function eventDate() {
 
     for (i = firstDay.getDate(); i <= finalDay.getDate(); i++) {
 
-        if (firstDay.getDay() == 2 && firstDay.getDate() < 8 && firstDay.getDate() <= date.getDate() && date1set == 0)  {
+        if (firstDay.getDay() == 2 && firstDay.getDate() < 8 && firstDay.getDate() >= date.getDate() && date1set == 0)  {
             const nextTuesday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
         }
 
-        if (firstDay.getDay() == 3 && firstDay.getDate() <= lastWeek && firstDay.getDate() <= date.getDate() && date2set == 0) {
+        if (firstDay.getDay() == 3 && firstDay.getDate() <= lastWeek && firstDay.getDate() >= date.getDate() && date2set == 0) {
             const lastWednesday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
@@ -66,14 +66,14 @@ function eventDate() {
     for (i = secondMonth.getDate(); i <= secondMonthFinal.getDate(); i++) {
 
         if (secondMonth.getDay() == 2 && secondMonth.getDate() < 8 && date1set == 0)  {
-            const nextTuesday2 = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
+            const nextTuesday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
             date1set = 1;
     
         }
 
-        if (secondMonth.getDay() == 3 && secondMonth.getDate() <  lastWeekSecond  && date2set == 0) {
-            const lastWednesday2 = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
+        if (secondMonth.getDay() == 3 && secondMonth.getDate() < lastWeekSecond  && date2set == 0) {
+            const lastWednesday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
