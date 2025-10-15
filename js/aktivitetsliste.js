@@ -13,8 +13,6 @@ const months = ["Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "A
 
 let eventList = document.getElementById("eventList");
 
-let eventDetail = document.getElementById("eventDetail");
-
 let date1set = 0;
 let date2set = 0;
 let date3set = 0;
@@ -24,7 +22,7 @@ let date6set = 0;
 
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
-    eventList.innerHTML += '<button class="eventButton" onclick="seeEvent('+ i + 1 +')">' + x + '</button>';
+    eventList.innerHTML += '<button class="eventButton" onclick="seeEvent('+ i +')">' + x + '</button>';
     if (i == events.length - 1) {
         eventDate();
     }
@@ -126,12 +124,13 @@ function eventDate() {
             date5set = 1;
         }
 
-        if (secondMonth.getDay() == 4 && secondMonth.getDate() > 7 && secondMonth.getDate() <= 14 && secondMonth.getDate() >= date.getDate() && date6set == 0)  {
+        if (secondMonth.getDay() == 4 && secondMonth.getDate() > 7 && secondMonth.getDate() <= 14 && date6set == 0)  {
             const secondThursday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event6date2').innerText += secondThursday;
             date6set = 1;
         }
 
+        
         secondMonth.setDate(secondMonth.getDate() + 1);
     }
 
