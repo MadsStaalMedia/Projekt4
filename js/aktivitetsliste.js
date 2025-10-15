@@ -76,7 +76,7 @@ function eventDate() {
             date2set = 1;
         }
 
-        secondMonth.setDate(secondMonth.getDate + 1);
+        secondMonth.setDate(secondMonth.getDate() + 1);
     }
 
 }
