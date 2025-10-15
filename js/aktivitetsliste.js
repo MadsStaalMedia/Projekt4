@@ -83,8 +83,8 @@ function eventDate() {
 
         if (firstDay.getDay() == 4 && firstDay.getDate() > 7 && firstDay.getDate() <= 14 && firstDay.getDate() >= date.getDate() && date6set == 0)  {
             const secondThursday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
-            document.getElementById('event4date1').innerText += secondThursday;
-            date3set = 1;
+            document.getElementById('event6date2').innerText += secondThursday;
+            date6set = 1;
         }
 
         firstDay.setDate(firstDay.getDate() + 1);
@@ -121,9 +121,15 @@ function eventDate() {
         }
 
         if (secondMonth.getDay() == 4 && secondMonth.getDate() > lastWeekSecond && secondMonth.getDate() >= date.getDate() && date5set == 0)  {
-            const lastThursday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            const lastThursday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event4date3').innerText += lastThursday;
             date5set = 1;
+        }
+
+        if (secondMonth.getDay() == 4 && secondMonth.getDate() > 7 && secondMonth.getDate() <= 14 && secondMonth.getDate() >= date.getDate() && date6set == 0)  {
+            const secondThursday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
+            document.getElementById('event6date2').innerText += secondThursday;
+            date6set = 1;
         }
 
         secondMonth.setDate(secondMonth.getDate() + 1);
