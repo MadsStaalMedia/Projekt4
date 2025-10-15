@@ -302,6 +302,11 @@ footer {
     }
 }
 
+.eventDiv {
+    border-style: solid;
+    border-radius: 2px 0px 0px 0px;
+}
+
 #eventDetail > * {
     li{
         list-style: none;
