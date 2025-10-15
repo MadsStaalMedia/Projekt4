@@ -17,6 +17,7 @@ let eventDetail = document.getElementById("eventDetail");
 
 let date1set = 0;
 let date2set = 0;
+let date3set = 0;
 
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
@@ -57,6 +58,12 @@ function eventDate() {
             date2set = 1;
         }
 
+        if (firstDay.getDay() == 6 && firstDay.getDate() > 7 && firstDay.getDate() <= 14 && firstDay.getDate() >= date.getDate() && date3set == 0)  {
+            const secondSaturday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            document.getElementById('event4date1').innerText += secondSaturday;
+            date3set = 1;
+        }
+
         firstDay.setDate(firstDay.getDate() + 1);
     }
 
@@ -74,6 +81,12 @@ function eventDate() {
             document.getElementById('event1date2').innerText += lastWednesday;
             document.getElementById('event1date3').innerText += lastWednesday;
             date2set = 1;
+        }
+
+        if (secondMonth.getDay() == 6 && secondMonth.getDate() > 7 && secondMonth.getDate() <= 14 && date3set == 0)  {
+            const secondSaturday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
+            document.getElementById('event4date1').innerText += secondSaturday;
+            date3set = 1;
         }
 
         secondMonth.setDate(secondMonth.getDate() + 1);
