@@ -18,6 +18,8 @@ let eventDetail = document.getElementById("eventDetail");
 let date1set = 0;
 let date2set = 0;
 let date3set = 0;
+let date4set = 0;
+let date5set = 0;
 
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
@@ -64,6 +66,18 @@ function eventDate() {
             date3set = 1;
         }
 
+        if (firstDay.getDay() == 0 && firstDay.getDate() > lastWeek && firstDay.getDate() >= date.getDate() && date4set == 0)  {
+            const lastSunday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            document.getElementById('event4date2').innerText += lastSunday;
+            date4set = 1;
+        }
+
+        if (firstDay.getDay() == 4 && firstDay.getDate() > lastWeek && firstDay.getDate() >= date.getDate() && date5set == 0)  {
+            const lastThursday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            document.getElementById('event4date3').innerText += lastThursday;
+            date5set = 1;
+        }
+
         firstDay.setDate(firstDay.getDate() + 1);
     }
 
@@ -87,6 +101,18 @@ function eventDate() {
             const secondSaturday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event4date1').innerText += secondSaturday;
             date3set = 1;
+        }
+
+        if (secondMonth.getDay() == 0 && secondMonth.getDate() > lastWeekSecond && secondMonth.getDate() >= date.getDate() && date4set == 0)  {
+            const lastSunday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
+            document.getElementById('event4date2').innerText += lastSunday;
+            date4set = 1;
+        }
+
+        if (secondMonth.getDay() == 4 && secondMonth.getDate() > lastWeekSecond && secondMonth.getDate() >= date.getDate() && date5set == 0)  {
+            const lastThursday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            document.getElementById('event4date3').innerText += lastThursday;
+            date5set = 1;
         }
 
         secondMonth.setDate(secondMonth.getDate() + 1);
