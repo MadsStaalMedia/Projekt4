@@ -9,7 +9,7 @@ const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.sv
 
 const events = [netOd, streg, lego, klub, natur, netSve, cafe, halvtre];
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = ["Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"];
 
 let eventList = document.getElementById("eventList");
 
