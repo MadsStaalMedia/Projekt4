@@ -69,6 +69,7 @@ function eventDate() {
         if (firstDay.getDay() == 0 && firstDay.getDate() > lastWeek && firstDay.getDate() >= date.getDate() && date4set == 0)  {
             const lastSunday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event4date2').innerText += lastSunday;
+            document.getElementById('event5date1').innerText += lastSunday;
             date4set = 1;
         }
 
@@ -106,6 +107,7 @@ function eventDate() {
         if (secondMonth.getDay() == 0 && secondMonth.getDate() > lastWeekSecond && secondMonth.getDate() >= date.getDate() && date4set == 0)  {
             const lastSunday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event4date2').innerText += lastSunday;
+            document.getElementById('event5date1').innerText += lastSunday;
             date4set = 1;
         }
 
