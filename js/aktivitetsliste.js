@@ -20,6 +20,7 @@ let date2set = 0;
 let date3set = 0;
 let date4set = 0;
 let date5set = 0;
+let date6set = 0;
 
 for (let i = 0; i < events.length ; i++) {
     let x = events[i];
@@ -50,6 +51,7 @@ function eventDate() {
         if (firstDay.getDay() == 2 && firstDay.getDate() <= 7 && firstDay.getDate() >= date.getDate() && date1set == 0)  {
             const nextTuesday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
+            document.getElementById('event6date1').innerText += nextTuesday;
             date1set = 1;
         }
 
@@ -79,6 +81,12 @@ function eventDate() {
             date5set = 1;
         }
 
+        if (firstDay.getDay() == 4 && firstDay.getDate() > 7 && firstDay.getDate() <= 14 && firstDay.getDate() >= date.getDate() && date6set == 0)  {
+            const secondThursday = firstDay.getDate() + ". " + months[firstDay.getMonth()];
+            document.getElementById('event4date1').innerText += secondThursday;
+            date3set = 1;
+        }
+
         firstDay.setDate(firstDay.getDate() + 1);
     }
 
@@ -87,6 +95,7 @@ function eventDate() {
         if (secondMonth.getDay() == 2 && secondMonth.getDate() <= 7 && date1set == 0)  {
             const nextTuesday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
+            document.getElementById('event6date1').innerText += nextTuesday;
             date1set = 1;
     
         }
