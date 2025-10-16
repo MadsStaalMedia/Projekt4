@@ -5,7 +5,8 @@
     --text-color-1: #FFFFFF;
     --text-color-2: #000000;
     --box-color-1: #4C3140;
-    --box-color-2: #4C314038;
+    --box-color-2: #002532D9;
+    --footer-color: #002532;
     --black: #000000;
 }
 
@@ -111,7 +112,7 @@ footer {
     min-height: 249px;
     height: auto;
     padding: 32px 30px 9px;
-    background-color: var(--box-color-1);
+    background-color: var(--footer-color);
 
     p {
         color: var(--text-color-1);
