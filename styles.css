@@ -248,6 +248,13 @@ footer {
         font-style: italic;
         font-weight: 250;
         line-height: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
     }
 }
 
