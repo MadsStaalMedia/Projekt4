@@ -6,6 +6,7 @@
     --text-color-2: #000000;
     --box-color-1: #4C3140;
     --box-color-2: #002532D9;
+    --box-color-3: #26455057;
     --footer-color: #002532;
     --black: #000000;
 }
@@ -257,7 +258,7 @@ footer {
 
 
 .activityBox {
-    background-color: var(--box-color-2);
+    background-color: var(--box-color-3);
     width: 100%;
     min-height: 100px;
 
@@ -267,7 +268,7 @@ footer {
 }
 
 .signupBox {
-    background-color: var(--box-color-3);
+    background-color: var(--box-color-2);
     width: 100%;
     min-height: 100px;
 }
