@@ -195,14 +195,18 @@ footer {
     align-self: center;
     width: 50%;
     border-radius: 21px;
+    padding: 16px 26px;
+    margin-bottom: 20px;
     background-color: var(--button-color);
+      
+}
+
+.signup > * {
     font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 16px 26px;
-    margin-bottom: 20px;
     color: var(--text-color-1);
-    text-shadow: 2px 2px 2px var(--black);    
+    text-shadow: 2px 2px 2px var(--black);  
 }
 
 
@@ -263,7 +267,7 @@ footer {
 }
 
 .signupBox {
-    background-color: var(--box-color-1);
+    background-color: var(--box-color-3);
     width: 100%;
     min-height: 100px;
 }
@@ -415,6 +419,10 @@ footer {
         float: right;
         width: 30%;
         margin-right: 20%;
+    }
+
+    .signup {
+        width: auto;
     }
 
     
