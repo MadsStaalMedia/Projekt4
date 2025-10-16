@@ -360,12 +360,16 @@ footer {
         position: fixed;
         right: 60px;
         top: 26px;
+        padding: 16px 26px;
         border-radius: 21px;
         background-color: var(--button-color);
+        
+    }
+
+    .header__signup > * {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.2rem;
-        padding: 16px 26px;
         color: var(--text-color-1);
         text-shadow: 2px 2px 2px var(--black);
     }
