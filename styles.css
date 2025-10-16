@@ -139,11 +139,15 @@ footer {
     text-align: center;
 
     i {
-        margin: 0em auto 1em;
-        padding: 0px 8%;
+        margin: 0em;
+        padding: 0px;
         color: var(--text-color-1);
     }
 
+    a {
+        margin: 0em 2em 1em;
+        text-decoration: none;
+    }
 }
 
 /* En farvet cirkel til tekst */
