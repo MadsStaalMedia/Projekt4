@@ -31,7 +31,8 @@ for (let i = 0; i < events.length ; i++) {
 
 function seeEvent(x) {
     let element = document.getElementById("event"+x);
-    element.scrollIntoView(true);
+    let destination = element.getBoundingClientRect();
+    window.scrollBy(destination.x, destination.y-60);
 }
 
 function eventDate() {
