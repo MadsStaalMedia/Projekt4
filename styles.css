@@ -212,6 +212,8 @@ footer {
     font-size: 1.2rem;
     color: var(--text-color-1);
     text-shadow: 2px 2px 2px var(--black);  
+    padding: 16px 8px;
+    text-decoration: none;
 }
 
 
@@ -388,6 +390,7 @@ footer {
         font-size: 1.2rem;
         color: var(--text-color-1);
         text-shadow: 2px 2px 2px var(--black);
+        text-decoration: none;
     }
 
     footer {
