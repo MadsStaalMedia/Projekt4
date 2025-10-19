@@ -55,6 +55,79 @@ p {
 
 }
 
+/*        menu styling      */
+
+.header__menu {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4C3140;
+  
+  
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  
+  
+}
+
+.header__menu a {
+  padding: 60px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  display: block;
+  font-family:  "adelle-sans", "roboto", Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.header__menu .closebtn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 60px;
+  background-color: #4C3140;
+  color: #ffffff;
+  border: none;
+  
+  
+}
+
+header {
+    box-sizing: border-box;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    min-height: 49px;
+    height: auto;
+    padding: 16px 8px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--black);
+    background-color: var(--background-color);
+}
+
+
+.header__logo {
+    position: relative;
+    left: 10px;
+    
+}
+
+/*         menu stylinh     */
 
 
 /* Wrapper til hele siden */
