@@ -55,7 +55,9 @@ p {
 
 }
 
-/*        menu styling      */
+
+
+/*        mobil menu styling      */
 
 .header__menu {
   height: 100%;
@@ -66,15 +68,17 @@ p {
   top: 0;
   left: 0;
   background-color: #4C3140;
-  
+  margin: 0;
+  overflow-y: scroll;
   
 }
 
 .overlay-content {
-  position: relative;
   top: 10%;
   width: 100%;
   text-align: center;
+  margin: 0;
+
   
   
 }
@@ -86,13 +90,12 @@ p {
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  display: block;
   font-family:  "adelle-sans", "roboto", Helvetica, sans-serif;
   font-weight: 900;
 }
 
 .header__menu .closebtn {
-  position: absolute;
+  position: fixed;
   top: 6px;
   right: 8px;
   font-size: 60px;
@@ -127,7 +130,7 @@ header {
     
 }
 
-/*         menu stylinh     */
+/*       mobil menu styling     */
 
 
 /* Wrapper til hele siden */
@@ -136,8 +139,6 @@ header {
     flex-direction: column;
     margin: 0px;
 }
-
-
 
 header {
     box-sizing: border-box;
@@ -157,8 +158,9 @@ header {
 }
 
 .header__menu {
-    position: relative;
+    position: fixed;
     right: 10px;
+    z-index: 1;
 }
 
 .header__logo {

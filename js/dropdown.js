@@ -13,19 +13,19 @@ const menuPunkter = [
 ];
 
 // Loop til at vise menu-punkterne (DOM-manipulation)
-let htmlIndhold = "";
 for (let i = 0; i < menuPunkter.length; i++) {
   const punkt = menuPunkter[i];
-  htmlIndhold += "<a href='" + punkt.href + "'>" + punkt.title + "</a>";
+  menuContainer.innerHTML += "<a href='" + punkt.href + "'>" + punkt.title + "</a>";
 }
-menuContainer.innerHTML = htmlIndhold;
 
 // Funktion med if/else (kontrolstruktur)
 function visMenu(vis) {
   if (vis) {
-    overlay.style.display = "block";
+    overlay.style.display = "inline-block";
+    document.body.style.overflow = "hidden"; // låser scroll
   } else {
     overlay.style.display = "none";
+    document.body.style.overflow = "auto"; // tillader scroll igen
   }
 }
 
