@@ -16,7 +16,7 @@ if (Number(x)==0) {
    document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel2.PNG"> '
 }
 if (Number(x)==2) {
-    document.getElementById("billede").innerHTML='<img class="carousel" src="img/baby3.png"> '
+document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel3.PNG"> '
 }
 }
 document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel1.webp"> '
