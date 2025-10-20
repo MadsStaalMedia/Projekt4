@@ -341,37 +341,76 @@ footer {
 
 /*Accordion (Svend)*/ 
 #accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {text-align: left;
-        line-height: 50%;
-        padding: 0px 10%;
+        font-size: 1.2rem;
+        line-height: 150%;
+        padding: 0px 5px 0px 10%;
+        color: var(--text-color-1);
+        text-shadow: 1px 1px 1px var(--black);
     }
+    
     p  {margin: 0%;
-        padding: 0px 10%;
-
+        padding: 5px 10%;
     }
+
+    li {
+        font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 165%;
+        margin-top: 0;
+        padding: 0px 10%;
+        color: var(--text-color-2);
+        text-align: left;
+    }
+
     
 }
 
 .accordion__section {
-  background-color: #eee;
-  color: #444;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  background-color: var(--box-color-1);
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 0px;
   width: 100%;
   border: none;
   outline: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 
-.active, .accordion__section:hover {
-  background-color: #ccc;
+.accordion__section:after {
+    content: '\002B';
+    float: right;
+    font-size: 1.2rem;
+    padding: 0px 10% 0px 5px;
+    color: var(--text-color-1);
+}
+
+.expanded, .accordion__section:hover {
+  background-color: var(--box-color-2);
   cursor: pointer;
+}
+
+.expanded:after {
+    content: "\002D";
+    font-size: 1.2rem;
 }
 
 .panel {
   background-color: white;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.indhold {
+    text-align: left;
 }
 
 
