@@ -360,7 +360,7 @@ footer {
   width: 100%;
   border: none;
   outline: none;
-  transition display: 0.4s;
+  transition: 1s;
 }
 
 .active, .accordion__section:hover {
