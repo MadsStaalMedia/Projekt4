@@ -20,3 +20,15 @@ document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede
 }
 }
 document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel1.webp"> '
+
+//window.setInterval(next_img, 5000); 
+
+//let billedeNummer = 0;  
+
+//function next_img() { 
+  //  skiftbillede(billedeNummer); 
+  //  billedeNummer += 1;
+   // if (billedeNummer >= billeder.length) { 
+   //     billedeNummer = 0;
+   // }
+//}
