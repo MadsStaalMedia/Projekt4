@@ -5,6 +5,7 @@
     --text-color-1: #FFFFFF;
     --text-color-2: #000000;
     --text-color-3: #29605B;
+    --text-color-4: #4C3140;
     --box-color-1: #4C3140;
     --box-color-2: #002532D9;
     --box-color-3: #26455057;
@@ -310,8 +311,7 @@ footer {
     font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
-    color: var(--text-color-1);
-    text-shadow: 2px 2px 2px var(--black);  
+    color: var(--text-color-4);
     padding: 16px 8px;
     text-decoration: none;
 }
@@ -549,8 +549,7 @@ footer {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.2rem;
-        color: var(--text-color-1);
-        text-shadow: 2px 2px 2px var(--black);
+        color: var(--text-color-4);
         text-decoration: none;
     }
 
