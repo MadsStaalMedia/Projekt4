@@ -4,9 +4,11 @@
     --button-color: #80DDA9;
     --text-color-1: #FFFFFF;
     --text-color-2: #000000;
+    --text-color-3: #29605B;
     --box-color-1: #4C3140;
     --box-color-2: #002532D9;
     --box-color-3: #26455057;
+    --box-color-4: #B5BEC0;
     --footer-color: #002532;
     --black: #000000;
 }
@@ -319,6 +321,15 @@ footer {
     margin-bottom: 10px;
 }
 
+.eventButtonContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .eventButton {
     display: flex;
     flex-direction: row;
@@ -327,7 +338,7 @@ footer {
     min-width: 318px;
     width: 80%;
     height: 4em;
-    padding: 1%;
+    padding: 5px;
     border-radius: 4em;
     box-sizing: border-box;
     border: var(--box-color-2) solid 1px;
@@ -342,25 +353,54 @@ footer {
     }
 
     p {
+        font-size: 1.2rem;
         padding-top: 1em;
+        padding-left: 0.5em;
+        color: var(--text-color-3);
     }
 }
 
-.eventDiv {
-    margin: 10px 5%;
+.eventDiv1 {
+    margin: 10px 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-style: solid;
-    border-width: 1px 0px 0px 0px;
+    background-color: var(--box-color-4);
 
     h3 {
         text-align: left;
-        padding: 0px 5%;
+        margin-bottom: 0px;
     }
 
     p {
-        padding: 0px 5%;
+        line-height: normal;
     }
+
+    img {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+}
+
+.eventDiv2 {
+    margin: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3 {
+        text-align: left;
+    }
+
+    p {
+        line-height: normal;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
 }
 
 #eventDetail > * {
