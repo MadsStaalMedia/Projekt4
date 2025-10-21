@@ -317,8 +317,8 @@ footer {
     }
 
     p {
+        padding-top: 1em;
         color: var(--text-color-1);
-        line-height: normal;
     }
 }
 
@@ -456,6 +456,10 @@ footer {
 
     .signup {
         width: auto;
+    }
+
+    .eventButton {
+        max-width: 800px;
     }
 
     

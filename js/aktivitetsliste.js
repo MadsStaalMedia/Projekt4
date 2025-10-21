@@ -5,7 +5,7 @@ const klub = '<img class="eventButton__img" src="billeder/ikoner/klubben.svg" al
 const natur = '<img class="eventButton__img" src="billeder/ikoner/natur.svg" alt="naturgruppen ikon"><p><b>Naturgruppen</b> - Svendborg</p>';
 const netSve = '<img class="eventButton__img" src="billeder/ikoner/netvaerk2.svg" alt="netærksgruppen svendborg ikon"><p><b>Netværksgruppen</b> - Svendborg</p>';
 const cafe = '<img class="eventButton__img" src="billeder/ikoner/cafe.svg" alt="cafe ærø ikon"><p><b>Cafe Ærø</b> - Ærø</p>';
-const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.svg" alt="50+ netværksgruppen ikon"><p><b>50+ Netværksgruppen</b><br> (mangler tovholder) </p>';
+const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.svg" alt="50+ netværksgruppen ikon"><p><b>50+ Netværksgruppen</b></p>';
 
 const events = [netOd, streg, lego, klub, natur, netSve, cafe, halvtre];
 
