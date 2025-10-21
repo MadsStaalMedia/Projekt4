@@ -170,6 +170,10 @@ footer {
         text-shadow: 1px 1px 1px var(--black);
         line-height: normal;
     }
+
+    b {
+        font-weight: 800;
+    }
     
 }
 
@@ -187,6 +191,7 @@ footer {
         font-weight: 100;
         line-height: normal;
         margin: 0;
+        letter-spacing: 0.1em;
     }
 
     p {
@@ -194,6 +199,9 @@ footer {
         color: var(--text-color-1);
         text-shadow: 1px 1px 1px var(--black);
         line-height: normal;
+        font-weight: 350;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -206,7 +214,7 @@ footer {
 
 .videoPlay {
     min-width: 240px;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -433,6 +441,8 @@ footer {
         margin: 30px 5%;
         max-width: 600px;
         max-height: 600px;
+        min-width: 350px;
+        min-height: 350px;
         width: 30%;
         height: 30vw;
         float: left;
