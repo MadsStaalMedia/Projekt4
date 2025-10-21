@@ -13,13 +13,12 @@
 
 body {
     margin: 0;
-    
 }
 
 h1 {
     font-family:  "adelle-sans", "roboto", Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 110%;
     color: var(--text-color-2);
     text-align: center;
@@ -28,7 +27,7 @@ h1 {
 h2 {
     font-family: "adelle", "ltc-bodoni-175", Georgia, serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 110%;
     color: var(--text-color-2);
     text-align: center;
@@ -92,8 +91,8 @@ header {
 }
 
 .header__logo {
-    position: relative;
-    left: 10px;
+    position: absolute;
+    left: 2vw;
     
 }
 
@@ -331,7 +330,11 @@ footer {
 
     h3 {
         text-align: left;
-        padding: 0px 10%;
+        padding: 0px 5%;
+    }
+
+    p {
+        padding: 0px 5%;
     }
 }
 
@@ -346,11 +349,11 @@ footer {
 @media only screen and (min-width: 768px) {
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     header {
@@ -365,13 +368,16 @@ footer {
 
     .header__nav {
         display: inline;
+        position: absolute;
+        margin-left: 0px;
+        padding-left: 10vw;
     }
 
     .header__nav > * {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.5rem;
-        margin-left: 10vw;
+        margin: 0 5vw 0 0;
         color: var(--black);
     }
 
