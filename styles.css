@@ -344,6 +344,15 @@ footer {
 
 
 @media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
     header {
         min-height: 114px;
         align-items: center;
@@ -362,7 +371,7 @@ footer {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.5rem;
-        margin-left: 1.2em;
+        margin-left: 10vw;
         color: var(--black);
     }
 
@@ -427,14 +436,14 @@ footer {
         align-self: auto;
 
         p {
-            padding-left: 20%;
+            padding-left: 10%;
         }
     }
 
     .videoPlay {
         float: right;
         width: 30%;
-        margin-right: 20%;
+        margin-right: 10%;
     }
 
     .signup {
