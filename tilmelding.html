@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script src="https://kit.fontawesome.com/0792b881c1.js" crossorigin="anonymous"></script>
+    <script src="js/dropdown.js" defer></script>
     
     <title>Meld dig frivillig</title>
 </head>
@@ -47,11 +48,20 @@
                 <a href="tilmelding.html">Bliv frivillig</a>
             </button>
 
-            <div class="header__menu">
-                
-                <i class="fa-solid fa-bars fa-2x"></i>
-
+             <!-- Menu ikon til mobil visning -->
+            
+            <div id="myNav" class="header__menu">
+                <button id="krydsKnap" class="closebtn">&times;</button>
+                <div class="overlay-content" id="menuContainer"></div>
             </div>
+
+                <!-- Burger-ikonet -->
+            <span id="burgerKnap">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </span>
+
+                
+            <!-- ikon til mobil visning slutter -->
 
 
         </header>
