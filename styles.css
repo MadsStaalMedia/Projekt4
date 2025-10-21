@@ -83,6 +83,7 @@ header {
     border-width: 0px 0px 1px 0px;
     border-color: var(--black);
     background-color: var(--background-color);
+    z-index: 2;
 }
 
 .header__menu {
