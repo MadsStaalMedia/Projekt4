@@ -367,10 +367,11 @@ footer {
     }
 
     .header__nav {
-        display: inline;
+        display: block;
         position: absolute;
+        left: 0px;
         margin-left: 0px;
-        padding-left: 10vw;
+        padding-left: 10%;
     }
 
     .header__nav > * {
