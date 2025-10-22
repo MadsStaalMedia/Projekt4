@@ -740,5 +740,19 @@ footer {
         max-width: 800px;
     }
 
+    .eventDiv1 {
+        grid-template-areas: 
+        'img activity'
+        'img details'
+        'img details';
+    }
+
+    .eventDiv2 {
+        grid-template-areas: 
+        'img activity'
+        'img details'
+        'img details';
+    }
+
     
 }
