@@ -298,6 +298,10 @@ footer {
     }
 }
 
+.contentCircle__logo_wide {
+    display: none;
+}
+
 
 /* CSS til videoafspilleren, så den er responsiv */
 
@@ -685,14 +689,48 @@ footer {
     }
 
     .contentCircle {
-        margin: 30px 5%;
-        max-width: 600px;
-        max-height: 600px;
+        margin: -99px 10%;
+        max-width: 844px;
+        max-height: 844px;
         min-width: 350px;
         min-height: 350px;
-        width: 30%;
-        height: 30vw;
-        float: left;
+
+        h1 {
+            padding-top: 20%;
+            font-size: 3.5rem;
+        }
+        
+    }
+
+    .contentCircle__logo {
+        display: none;
+    }
+
+    .contentCircle__logo_wide {
+        display: inline;
+        position: relative;
+        top: 20%;
+        left: 15%;
+
+        h3 {
+            text-align: left;
+            padding: 0;
+            font-size: 1.5rem;
+            color: var(--text-color-1);
+            font-weight: 100;
+            line-height: normal;
+            margin: 0;
+            letter-spacing: 0.1em;
+        }
+
+        p {
+            padding: 0;
+            color: var(--text-color-1);
+            line-height: normal;
+            font-weight: 350;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+        }
     }
 
     .contentContainer {
@@ -768,5 +806,9 @@ footer {
     .baseGrid {
         grid-template-areas: 
         '1fr 1fr';
+    }
+
+    .frontHeader {
+        height: 630px;
     }
 }
