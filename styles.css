@@ -418,6 +418,13 @@ footer {
     min-height: 100px;
 }
 
+.signupArea {
+    display: grid;
+    grid-template-areas: 
+    '1fr'
+    '1fr';
+}
+
 
 #eventList {
     box-sizing: border-box;
@@ -754,5 +761,8 @@ footer {
         'img details';
     }
 
-    
+    .signupArea {
+        grid-template-areas: 
+        '1fr 1fr';
+    }
 }
