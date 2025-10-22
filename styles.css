@@ -662,8 +662,8 @@ footer {
 
     .contentContainer {
         grid-template-areas: 
-        'text video'
-        'profile video';
+        'text text video'
+        'profile profile video';
     }
 
     .profileBox {
@@ -671,22 +671,28 @@ footer {
         'text 1fr 1fr';
         background-color: var(--box-color-5);
         border: none;
-        width: 50vw;
-        grid-column-gap: 5%;
+        margin-left: 10%;
+        grid-column-gap: 2%;
 
         h2 {
             padding: 30% 0;
+            font-size: 1.5rem;
         }
     }
 
     .profileBox__profile {
-        padding-top: 50%;
+        padding-top: 40%;
         max-width: 160px;
-        width: auto;
-    }
+        width: 100%;
+        min-width: 60px;
 
-    .videoContainer {
-        width: 50vw;
+        p {
+            color: var(--text-color-1);
+        }
+
+        h3 {
+            color: var(--text-color-1);
+        }
     }
 
     .videoPlay {
