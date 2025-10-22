@@ -808,4 +808,19 @@ footer {
     .mobileDivider {
         display: none;
     }
+
+    #eventList {
+        height: 300px;
+        padding: 0 15% 10px 15%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .eventButton {
+            width: 40%;
+        }
+    }
+
+    
+    
 }
