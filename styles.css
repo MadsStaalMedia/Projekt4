@@ -302,6 +302,7 @@ footer {
 .signup {
     align-self: center;
     width: 50%;
+    border: none;
     border-radius: 21px;
     padding: 16px 26px;
     margin-bottom: 20px;
@@ -316,6 +317,10 @@ footer {
     color: var(--text-color-4);
     padding: 16px 8px;
     text-decoration: none;
+}
+
+.signup :hover {
+    text-decoration: underline;
 }
 
 
@@ -545,6 +550,7 @@ footer {
         padding: 16px 26px;
         border-radius: 21px;
         background-color: var(--button-color);
+        border: none;
         
     }
 
@@ -554,6 +560,10 @@ footer {
         font-size: 1.2rem;
         color: var(--text-color-4);
         text-decoration: none;
+    }
+
+    .header__signup :hover {
+        text-decoration: underline;
     }
 
     footer {
