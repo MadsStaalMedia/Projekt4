@@ -73,6 +73,10 @@ p {
     display: none;
 }
 
+.mobileDivider {
+    display: inline;
+}
+
 
 /*        mobil menu styling      */
 
@@ -825,5 +829,9 @@ footer {
     .pcDivider {
         display: block;
         margin: 0 5%;
+    }
+
+    .mobileDivider {
+        display: none;
     }
 }
