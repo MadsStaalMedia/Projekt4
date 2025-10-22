@@ -29,6 +29,16 @@ function skiftbillede(x) {
     slides[x].style.display = "block";
 }
 
+window.setInterval(next_img, 5000);
+
+function next_img( ) {
+    skiftbillede(billedenummer);
+    billedenummer += 1;
+    if (billedenummer >= billeder.length) {
+        billedenummer = 0;
+    }
+}
+
 //window.setInterval(next_img, 5000); 
 
 //let billedeNummer = 0;  
