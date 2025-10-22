@@ -322,7 +322,6 @@ footer {
     display: grid;
     grid-template-areas: 
     'text text'
-    '1fr 1fr'
     '1fr 1fr';
     align-self: center;
     border-style: solid;
@@ -349,14 +348,16 @@ footer {
         padding-right: 0px;
         font-style: italic;
         font-weight: 250;
-        line-height: 1.3rem;
-        font-size: 1.2rem;
+        line-height: 1.2em;
+        font-size: 1rem;
     }
 
     h3 {
         text-align: left;
         margin-bottom: 5px;
-        font-size: 1.2rem;
+        padding: 0;
+        font-size: 1.1rem;
+        line-height: 1em;
     }
 }
 
