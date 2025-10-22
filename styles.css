@@ -507,7 +507,6 @@ footer {
     align-self: center;
     height: 550px;
     overflow: hidden;
-    box-shadow: 0 4px 4px 0 var(--black);
 }
 
 .carousel_billede {
