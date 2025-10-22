@@ -7,7 +7,10 @@ for (let i = 0; i < billeder.length; i++) {
     let x = billeder[i];
     prikker.innerHTML += "<div class='carousel_prik' onclick='skiftbillede("+i+")'></div>";
 }
-
+/*
+Lav en class til prikkerne som gør at de er den mørkerre grå farve.
+Derefter tilføj at når man skifter billede at man så også tildeler prikken den overstående class, og fjerner hvis de andre har den grå farve
+*/
 function skiftbillede(x) {
 if (Number(x)==0) {
     document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel1.webp"> '
