@@ -11,6 +11,7 @@
     --box-color-2: #002532D9;
     --box-color-3: #26455057;
     --box-color-4: #B5BEC0;
+    --box-color-5: #AF93A3;
     --footer-color: #002532;
     --black: #000000;
 }
@@ -296,7 +297,9 @@ footer {
 /* CSS til videoafspilleren, så den er responsiv */
 
 .videoContainer {
+    grid-area: video;
     align-self: center;
+    display: grid;
 }
 
 .videoPlay {
@@ -307,14 +310,13 @@ footer {
 }
 
 .signup {
-    align-self: center;
+    grid-area: signup;
     width: 50%;
     border: none;
     border-radius: 21px;
     padding: 16px 26px;
-    margin-bottom: 20px;
+    margin: 20px 25% 20px;
     background-color: var(--button-color);
-      
 }
 
 .signup > * {
@@ -331,8 +333,23 @@ footer {
 }
 
 
+.contentContainer {
+    display: grid;
+    grid-template-areas: 
+    'video'
+    'text'
+    'signup'
+    'profile';
+
+    p {
+        grid-area: text;
+    }
+}
+
+
 /* En farvet kasse til vores billeder og citater */
 .profileBox {
+    grid-area: profile;
     display: grid;
     grid-template-areas: 
     'text text'
@@ -643,26 +660,39 @@ footer {
         float: left;
     }
 
-    .profileBox__profile {
-        width: 20%;
+    .contentContainer {
+        grid-template-areas: 
+        'text video'
+        'profile video';
     }
 
-    .videoContainer {
-        align-self: auto;
+    .profileBox {
+        grid-template-areas: 
+        'text 1fr 1fr';
+        background-color: var(--box-color-5);
+        border: none;
+        width: 50vw;
 
-        p {
-            padding-left: 10%;
+        h2 {
+            padding: 0;
         }
     }
 
+    .profileBox__profile {
+        width: 100%;
+    }
+
+    .videoContainer {
+        width: 50vw;
+    }
+
     .videoPlay {
-        float: right;
-        width: 30%;
-        margin-right: 10%;
+        width: auto;
+        height: 100%;
     }
 
     .signup {
-        width: auto;
+        display: none;
     }
 
     .eventButton {
