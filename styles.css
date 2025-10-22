@@ -132,32 +132,11 @@ p {
     cursor: pointer;
 }
 
-header {
-    box-sizing: border-box;
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 0px;
-    width: 100%;
-    min-height: 49px;
-    height: auto;
-    padding: 16px 8px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: var(--black);
-    background-color: var(--background-color);
-}
-
-
 .header__logo {
     position: relative;
     left: 10px;
     
 }
-
-/*       mobil menu styling     */
-
 
 /* Wrapper til hele siden */
 .flexWrapper {
