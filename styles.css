@@ -6,6 +6,7 @@
     --text-color-2: #000000;
     --text-color-3: #29605B;
     --text-color-4: #4C3140;
+    --text-color-5: #835971;
     --box-color-1: #4C3140;
     --box-color-2: #002532D9;
     --box-color-3: #26455057;
@@ -28,7 +29,8 @@ h1 {
     padding: 0 10vw;
 
     b {
-        color: var(--text-color-4);
+        color: var(--text-color-5);
+        font-weight: 800;
     }
 }
 
@@ -497,8 +499,9 @@ footer {
     }
 }
 
-.carousel {
+#carousel {
     width: 100%;
+    margin-bottom: 20px;
     
 }
 
