@@ -494,8 +494,12 @@ footer {
 }
 
 #eventDetail > * {
-    li{
-        list-style: none;
+    ul{
+        margin-left: 10%;
+    }
+
+    li {
+        text-indent: -12%;
     }
 }
 
