@@ -467,7 +467,16 @@ footer {
     }
 }
 
+.eventText {
+    grid-area: details;
+}
+
 .eventDiv1 {
+    display: grid;
+    grid-template-areas: 
+    'img'
+    'activity'
+    'details';
     margin: 10px 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -483,19 +492,30 @@ footer {
     }
 
     img {
+        grid-area: img;
         width: 80%;
         height: auto;
         align-self: center;
     }
+
+    eventButtonContainer {
+        grid-area: activity;
+    }
 }
 
 .eventDiv2 {
+    display: grid;
+    grid-template-areas: 
+    'img'
+    'activity'
+    'details';
     margin: 10px 0;
     padding-top: 20px;
     padding-bottom: 20px;
 
     h3 {
         text-align: left;
+        margin-bottom: 0px;
     }
 
     p {
@@ -503,11 +523,15 @@ footer {
     }
 
     img {
+        grid-area: img;
         width: 80%;
         height: auto;
         align-self: center;
     }
 
+    eventButtonContainer {
+        grid-area: activity;
+    }
 }
 
 #eventDetail > * {
