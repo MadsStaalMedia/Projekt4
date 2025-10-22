@@ -1,25 +1,33 @@
 const billeder = ["billeder/carousel/carousel1.webp","billeder/carousel/carousel1.webp","billeder/carousel/carousel1.webp"];
 
-let galleri = document.getElementById("carousel");
-let prikker = document.getElementById("carousel_prikker");
+let prikviser = document.getElementById("carousel_prikker");
+let billedeviser = document.getElementById("carousel_billede");
 
 for (let i = 0; i < billeder.length; i++) {
-    let x = billeder[i];
-    prikker.innerHTML += "<div class='carousel_prik' onclick='skiftbillede("+i+")'></div>";
+    prikviser.innerHTML += "<div class='carousel_prik' id='"+i+"'></div>";
+    billedeviser.innerHTML += "<img class='carousel_billede' onclick='skiftbillede("+i+")'></div>";
 }
 
+const slides = document.getElementsByClassName("carousel_billede");
+const prikker = document.getElementsByClassName("carousel_prik");
+
+slides[0].style.display = "block";
+
+let billedenummer = 0;
+
 function skiftbillede(x) {
-if (Number(x)==0) {
-    document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel1.webp"> '
+
+    for (i = 0; x < prikker.length; x++) {
+        prikker[i].classList.remove("active");
+        slides[i].style.display = "none";
+    }
+
+    billedenummer = x;
+
+    prikker[x].classList.add("active");
+
+    slides[x].style.display = "block";
 }
- if (Number(x)==1) {
-   document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel2.PNG"> '
-}
-if (Number(x)==2) {
-document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel3.PNG"> '
-}
-}
-document.getElementById("carousel_billede").innerHTML='<img id="carousel_billede" src="billeder/carousel/carousel1.webp"> '
 
 //window.setInterval(next_img, 5000); 
 
