@@ -345,7 +345,8 @@ footer {
     
 }
 
-#carousel_billede{
+.carousel_billede{
+    display: none;
 
 
 }
