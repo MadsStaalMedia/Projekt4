@@ -502,12 +502,20 @@ footer {
     
 }
 
-.carousel_billede{
-    display: none;
-
+#carousel_billede {
+    width: 100%;
+    align-self: center;
+    height: 550px;
+    overflow: hidden;
 }
 
-#carousel_prikker{
+.carousel_billede {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+#carousel_prikker {
     display: flex;
     box-sizing: border-box;
     width: 100%;
