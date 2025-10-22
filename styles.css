@@ -69,6 +69,11 @@ p {
 
 
 
+.pcDivider {
+    display: none;
+}
+
+
 /*        mobil menu styling      */
 
 #burgerKnap {
@@ -807,9 +812,18 @@ footer {
     .baseGrid {
         grid-template-areas: 
         '1fr 1fr';
+
+        h1 {
+            padding-top: 25%;
+        }
     }
 
     .frontHeader {
         height: 630px;
+    }
+
+    .pcDivider {
+        display: block;
+        margin: 0 5%;
     }
 }
