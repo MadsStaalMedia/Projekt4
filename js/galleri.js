@@ -24,7 +24,7 @@ function skiftbillede(x) {
 
     billedenummer = x;
 
-    prikker[x].classList.add("active");
+    prikker[x].classList.toggle("active");
 
     slides[x].style.display = "block";
 }
