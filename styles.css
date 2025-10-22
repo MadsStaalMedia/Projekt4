@@ -672,9 +672,10 @@ footer {
         background-color: var(--box-color-5);
         border: none;
         width: 50vw;
+        grid-column-gap: 20px;
 
         h2 {
-            padding: 0;
+            padding: 30% 0;
         }
     }
 
