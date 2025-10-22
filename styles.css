@@ -672,7 +672,7 @@ footer {
         background-color: var(--box-color-5);
         border: none;
         width: 50vw;
-        grid-column-gap: 20px;
+        grid-column-gap: 5%;
 
         h2 {
             padding: 30% 0;
@@ -680,7 +680,9 @@ footer {
     }
 
     .profileBox__profile {
-        width: 100%;
+        padding-top: 50%;
+        max-width: 160px;
+        width: auto;
     }
 
     .videoContainer {
