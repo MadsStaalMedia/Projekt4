@@ -356,6 +356,16 @@ footer {
     p {
         padding: 1rem 0px;
     }
+
+    li {
+        font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 165%;
+        margin-top: 0;
+        padding: 0px 10%;
+        color: var(--text-color-2);
+    }
     
 }
 

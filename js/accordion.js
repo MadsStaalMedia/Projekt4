@@ -5,7 +5,6 @@ const acc = [
     document.getElementById("section2"),
     document.getElementById("section3"),
     document.getElementById("section4"),
-    document.getElementById("section5")
 ]
 
 for (i=0; i < acc.length; i++) {
