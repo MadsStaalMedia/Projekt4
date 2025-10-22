@@ -4,7 +4,7 @@ let prikviser = document.getElementById("carousel_prikker");
 let billedeviser = document.getElementById("carousel_billede");
 
 for (let i = 0; i < billeder.length; i++) {
-    prikviser.innerHTML += "<div class='carousel_prik' onclick='skiftbillede("+i+")'></div>";
+    prikviser.innerHTML += "<div class='carousel_prik' onclick='skiftbillede('"+i+"')'></div>";
     billedeviser.innerHTML += "<img class='carousel_billede fade 'src='"+billeder[i]+"'>";
 }
 
@@ -17,7 +17,7 @@ let billedenummer = 0;
 
 function skiftbillede(x) {
 
-    for (i = 0; x < prikker.length; x++) {
+    for (i = 0; i < prikker.length; i++) {
         prikker[i].classList.remove("active");
         slides[i].style.display = "none";
     }
