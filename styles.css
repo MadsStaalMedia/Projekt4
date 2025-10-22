@@ -632,15 +632,14 @@ footer {
         display: block;
         position: absolute;
         left: 0px;
-        margin-left: 0px;
-        padding-left: 9vw;
+        margin-left: 9vw;
     }
 
     .header__nav > * {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.5rem;
-        margin: 0 5vw 0 0;
+        margin: 0 10px 0 0;
         color: var(--black);
     }
 
