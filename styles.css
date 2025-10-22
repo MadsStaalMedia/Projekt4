@@ -340,10 +340,10 @@ footer {
     'text'
     'signup'
     'profile';
+}
 
-    p {
-        grid-area: text;
-    }
+.callToAction {
+    grid-area: text;
 }
 
 
@@ -666,22 +666,30 @@ footer {
         'profile profile video';
     }
 
+    .callToAction {
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        margin: 0 1% 20px 10%;
+        padding: 0px;
+    }
+
     .profileBox {
         grid-template-areas: 
         'text 1fr 1fr';
         background-color: var(--box-color-5);
         border: none;
         margin-left: 10%;
+        padding: 5% 5%;
         grid-column-gap: 2%;
+        width: auto;
 
         h2 {
-            padding: 30% 0;
+            padding: 20% 0;
             font-size: 1.5rem;
         }
     }
 
     .profileBox__profile {
-        padding-top: 40%;
         max-width: 160px;
         width: 100%;
         min-width: 60px;
