@@ -414,8 +414,13 @@ footer {
     background-color: var(--box-color-2);
     width: 100%;
     min-height: 100px;
-    padding: 40px 10%;
+    padding: 40px 20%;
     color: var(--text-color-1);
+
+    h2 {
+        color: var(--text-color-1);
+        padding: 0;
+    }
 }
 
 
@@ -426,19 +431,34 @@ form {
 
 
 input[type=text] {
-    margin-bottom: 20px;
-    width: 80%;
+    margin-bottom: 30px;
+    width: 100%;
     color: var(--text-color-2);
 }
 
 input[type=email] {
-    margin-bottom: 10px;
-    width: 80%;
+    margin-bottom: 30px;
+    width: 100%;
     color: var(--text-color-2);
 }
 
 input[type=radio] {
     margin-bottom: 20px;
+}
+
+input[type=submit] {
+    width: 40%;
+    border: none;
+    border-radius: 21px;
+    padding: 16px 26px;
+    margin: 20px 30% 20px;
+    background-color: var(--button-color);
+    font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-color-4);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -1031,5 +1051,13 @@ input[type=radio] {
     
     #accordion {
         margin-left: 10%;
+    }
+
+    .signupBox {
+        width: 50vw;
+    }
+
+    .activityBox {
+        width: 50vw;
     }
 }
