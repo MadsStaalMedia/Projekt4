@@ -96,6 +96,7 @@ function eventDate() {
             const nextTuesday = secondMonth.getDate() + ". " + months[secondMonth.getMonth()];
             document.getElementById('event1date1').innerText += nextTuesday;
             document.getElementById('event6date1').innerText += nextTuesday;
+            document.getElementById('event7date1').innerText += nextTuesday;
             date1set = 1;
     
         }
