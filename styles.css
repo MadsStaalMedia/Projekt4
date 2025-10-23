@@ -423,6 +423,22 @@ footer {
     height: auto;
 }
 
+.mapDiv {
+    background-color: var(--box-color-2);
+
+    p {
+        color: var(--text-color-1);
+    }
+
+    h2 {
+        color: var(--text-color-1);
+    }
+
+    h3 {
+        color: var(--text-color-1);
+    }
+}
+
 
 #eventList {
     box-sizing: border-box;
@@ -892,7 +908,7 @@ footer {
         '1fr 1fr';
 
         h1 {
-            padding-top: 50px;
+            padding-top: 10%;
         }
     }
 
@@ -949,13 +965,26 @@ footer {
     }
 
     #eventDetail > * {
-    ul{
-        margin-left: 0;
+        ul{
+            margin-left: 0;
+        }
+
+        li {
+            text-indent: 0;
+        }
     }
 
-    li {
-        text-indent: 0;
+    #carousel {
+        margin-top: 20px;
+        width: 40vw;
     }
-}
+
+    .mapDiv {
+        margin: 10% 10% 10% 10%;
+
+        .signup {
+            display: inline;
+        }
+    }
     
 }
