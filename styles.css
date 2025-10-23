@@ -466,15 +466,14 @@ footer {
 }
 
 .eventText {
-    grid-area: details;
+    grid-area: activity;
 }
 
 .eventDiv1 {
     display: grid;
     grid-template-areas: 
     'img'
-    'activity'
-    'details';
+    'activity';
     margin: 10px 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -488,18 +487,13 @@ footer {
     p {
         line-height: normal;
     }
-
-    eventButtonContainer {
-        grid-area: activity;
-    }
 }
 
 .eventDiv2 {
     display: grid;
     grid-template-areas: 
     'img'
-    'activity'
-    'details';
+    'activity';
     margin: 10px 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -511,10 +505,6 @@ footer {
 
     p {
         line-height: normal;
-    }
-
-    eventButtonContainer {
-        grid-area: activity;
     }
 }
 
@@ -857,14 +847,12 @@ footer {
 
     .eventDiv1 {
         grid-template-areas: 
-        'img activity'
-        'img details';
+        'img activity';
     }
 
     .eventDiv2 {
         grid-template-areas: 
-        'img activity'
-        'img details';
+        'img activity';
     }
 
     .baseGrid {
@@ -920,13 +908,14 @@ footer {
 
     .eventText {
         width: 50vw;
+        margin-top: 10px;
 
         h3 {
-            padding: 0;
+            padding-left: 10px;
         }
 
         p {
-            padding: 0;
+            padding-left: 10px;
         }
     }
 
