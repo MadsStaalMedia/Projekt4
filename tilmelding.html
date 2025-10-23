@@ -69,19 +69,64 @@
         <h1>DEJLIGT AT SE <b>DIG</b> HER!</h1>
         <p>Udfyld venligst formularen herunder og tryk "send" for at melde dig som frivillig</p>
 
-        <div class="baseGrid">
-            <div class="activityBox">
-                <h2>Vælg en af de otte fynske aktiviteter</h2>
-
-                <div id="activitySelect"></div>
-
-            </div>
-
-            <div class="signupBox">
+        <form>
+            <div class="baseGrid">
             
+                <div class="activityBox">
+                    <h2>Vælg en af de otte fynske aktiviteter</h2>
+
+                
+
+                        <input type="radio" id="streger" name="aktivitet" value="streger">
+                        <label for="streger"><b>ADHD Streger</b> - Odense</label><br>
+
+                        <input type="radio" id="net1" name="aktivitet" value="net1">
+                        <label for="net1"><b>Netværksgruppe</b> - Odense</label><br>
+
+                        <input type="radio" id="klub" name="aktivitet" value="klub">
+                        <label for="klub"><b>ADHD Klubben</b> - Middelfart</label><br>
+
+                        <input type="radio" id="lego" name="aktivitet" value="lego">
+                        <label for="lego"><b>LEGO Cafe</b> - Bolbro</label><br>
+
+                        <input type="radio" id="net2" name="aktivitet" value="net2">
+                        <label for="net2"><b>Netværksgruppe</b> - Svendborg</label><br>
+
+                        <input type="radio" id="natur" name="aktivitet" value="natur">
+                        <label for="natur"><b>Naturgruppe</b> - Svendborg</label><br>
+
+                        <input type="radio" id="cafe" name="aktivitet" value="cafe">
+                        <label for="cafe"><b>Cafe Ærø</b> - Ærø</label><br>
+
+                        <input type="radio" id="halvtreds" name="aktivitet" value="halvtreds">
+                        <label for="halvtreds"><b>50+ Netværksgruppe</b> - (mangler tovholder)</label><br>
+                    
+
+                
+
+                </div>
+
+                <div class="signupBox">
+            
+                    <label for="fnavn">Fornavn:</label><br>
+                    <input type="text" id="fnavn" name="fnavn"><br>
+
+                    <label for="enavn">Efternavn:</label><br>
+                    <input type="text" id="enavn" name="enavn"><br>
+
+                    <label for="by">By:</label><br>
+                    <input type="text" id="by" name="by"><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+
+                    <input type="submit" value="Send">
+
+                </div>
+
             </div>
 
-        </div>
+        </form>
 
         <footer>
 
