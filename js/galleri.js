@@ -39,14 +39,3 @@ function next_img( ) {
     }
 }
 
-//window.setInterval(next_img, 5000); 
-
-//let billedeNummer = 0;  
-
-//function next_img() { 
-  //  skiftbillede(billedeNummer); 
-  //  billedeNummer += 1;
-   // if (billedeNummer >= billeder.length) { 
-   //     billedeNummer = 0;
-   // }
-//}
