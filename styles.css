@@ -180,8 +180,10 @@ header {
 
 footer {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+    'footer_branding'
+    'footer_some';
     width: 100%;
     min-height: 249px;
     height: auto;
@@ -731,7 +733,23 @@ footer {
     }
 
     footer {
+        grid-template-areas: 
+        'footer_branding footer_some';
         min-height: 220px;
+    }
+
+    .footer__branding {
+        margin-left: 10px;
+        margin-top: 190px;
+        margin-bottom: 0;
+    }
+
+    .footer__some {
+        height: 50px;
+        width: 480px;
+        margin-right: 10px;
+        margin-top: 190px;
+        margin-bottom: 0;
     }
 
     .contentCircle {
