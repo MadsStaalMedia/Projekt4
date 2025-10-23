@@ -844,9 +844,11 @@ footer {
 
     .eventButton {
         max-width: 800px;
+        margin-left: 0;
     }
 
     .eventButtonContainer {
+        align-items: flex-start;
         margin-top: 20px;
         margin-left: 0;
         padding-left: 0;
@@ -918,6 +920,24 @@ footer {
 
     .eventText {
         width: 50vw;
+
+        h3 {
+            padding: 0;
+        }
+
+        p {
+            padding: 0;
+        }
     }
+
+    #eventDetail > * {
+    ul{
+        margin-left: 0;
+    }
+
+    li {
+        text-indent: 0;
+    }
+}
     
 }
