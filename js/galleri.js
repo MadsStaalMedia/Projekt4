@@ -31,10 +31,10 @@ function skiftbillede(x) {
 
 window.setInterval(next_img, 5000);
 
-function next_img( ) {
-    skiftbillede(billedenummer);
+function next_img() {
     billedenummer += 1;
     if (billedenummer >= billeder.length) {
         billedenummer = 0;
     }
+    skiftbillede(billedenummer);
 }
