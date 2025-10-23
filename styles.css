@@ -847,21 +847,21 @@ footer {
     }
 
     .eventButtonContainer {
+        margin-top: 20px;
         margin-left: 0;
         padding-left: 0;
+        width: 40vw;
     }
 
     .eventDiv1 {
         grid-template-areas: 
         'img activity'
-        'img details'
         'img details';
     }
 
     .eventDiv2 {
         grid-template-areas: 
         'img activity'
-        'img details'
         'img details';
     }
 
@@ -907,17 +907,17 @@ footer {
         width: 30vw;
         max-width: 800px;
         height: 600px;
-        margin-left: 8vw;
+        margin-left: 5vw;
         overflow: hidden;
 
         img {
-            max-height: 700px;
+            max-height: 800px;
             width: auto;
         }
     }
 
-    .eventText > * {
-        
+    .eventText {
+        width: 50vw;
     }
     
 }
