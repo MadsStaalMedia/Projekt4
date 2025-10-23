@@ -38,15 +38,3 @@ function next_img( ) {
         billedenummer = 0;
     }
 }
-
-//window.setInterval(next_img, 5000); 
-
-//let billedeNummer = 0;  
-
-//function next_img() { 
-  //  skiftbillede(billedeNummer); 
-  //  billedeNummer += 1;
-   // if (billedeNummer >= billeder.length) { 
-   //     billedeNummer = 0;
-   // }
-//}
