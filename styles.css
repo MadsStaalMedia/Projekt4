@@ -256,6 +256,7 @@ footer {
 
 .videoContainer {
     align-self: center;
+    z-index: -01;
 }
 
 .videoPlay {
