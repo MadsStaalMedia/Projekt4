@@ -415,14 +415,30 @@ footer {
     width: 100%;
     min-height: 100px;
     padding: 40px 10%;
+    color: var(--text-color-1);
 }
+
+
+form {
+    font-size: 1.2rem;
+    font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+}
+
 
 input[type=text] {
+    margin-bottom: 20px;
     width: 80%;
+    color: var(--text-color-2);
 }
 
-input[tyoe=radio] {
+input[type=email] {
+    margin-bottom: 10px;
     width: 80%;
+    color: var(--text-color-2);
+}
+
+input[type=radio] {
+    margin-bottom: 20px;
 }
 
 
