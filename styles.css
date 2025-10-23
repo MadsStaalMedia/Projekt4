@@ -583,8 +583,6 @@ footer {
         font-size: 1.2rem;
         line-height: 150%;
         padding: 0px 5px 0px 10%;
-        color: var(--text-color-1);
-        text-shadow: 1px 1px 1px var(--black);
     }
 
     p {
