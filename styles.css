@@ -798,6 +798,16 @@ footer {
         border-width: 0px 0px 1px 0px;
         margin: 0 1% 20px 10%;
         padding: 0px;
+
+        h2 {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            padding: 0;
+        }
     }
 
     .profileBox {
@@ -868,6 +878,7 @@ footer {
 
     .frontHeader {
         height: 630px;
+        margin-bottom: 100px;
     }
 
     .pcDivider {
