@@ -547,6 +547,75 @@ footer {
     margin-bottom: 20px;
     
 }
+/*Accordion (Svend)*/ 
+#accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {text-align: left;
+        font-size: 1.2rem;
+        line-height: 150%;
+        padding: 0px 5px 0px 10%;
+        color: var(--text-color-1);
+        text-shadow: 1px 1px 1px var(--black);
+    }
+
+    p {
+        padding: 1rem 0px;
+    }
+
+    li {
+        font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 165%;
+        margin-top: 0;
+        padding: 0px 10%;
+        color: var(--text-color-2);
+    }
+    
+}
+
+.accordion__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  background-color: var(--box-color-1);
+  cursor: pointer;
+  padding: 18px 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.accordion__section:after {
+    content: '\25BC';
+    float: right;
+    font-size: 1.5rem;
+    padding: 0px 10% 0px 5px;
+    color: var(--text-color-1);
+}
+
+.expanded, .accordion__section:hover {
+  background-color: var(--box-color-2);
+  cursor: pointer;
+}
+
+.expanded:after {
+    content: "\25B2";
+    font-size: 1.5rem;
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+    padding: 0px 10%;
+  transition: max-height 0.3s ease-in-out;
+}
 
 #carousel_billede {
     width: 100%;

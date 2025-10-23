@@ -11,6 +11,7 @@
     <script src="js/dropdown.js" defer></script>
     
     <script src="js/galleri.js" defer></script>
+    <script src="js/accordion.js" defer></script>
 
     <title>Grunde til at blive frivillig</title>
 </head>
@@ -70,44 +71,80 @@
 
         </header>
 
-        <div class="baseGrid">
-            <h1>SOM FRIVILLIG FÅR DU <br><b>MASSER AF FORDELE</b></h1>
+        <main>
 
-            <div id="carousel"> 
-                <div id="carousel_billede"></div>
-                <div id="carousel_prikker"></div>
+            <div class="baseGrid">
+                <h1>SOM FRIVILLIG FÅR DU <br><b>MASSER AF FORDELE</b></h1>
+        
+            <h1>SOM FRIVILLIG FÅR DU MASSER AF FORDELE</h1>
+
+                <div id="carousel"> 
+                    <div id="carousel_billede"></div>
+                    <div id="carousel_prikker"></div>
+                </div>
             </div>
-        </div>
 
-        <hr class="pcDivider">
+            <hr class="pcDivider">
 
-        <div class="pcDivider">
-            <h1>
-                KAN DET BLIVE BEDRE? <br>
-                <b>SVARED ER JA!</b> <br>
-            </h1>
+            <div class="pcDivider">
+                <h1>
+                    KAN DET BLIVE BEDRE? <br>
+                    <b>SVARED ER JA!</b> <br>
+                </h1>
 
-            <h2>
-                For gaven i det hele er din indsats som frivillig
-            </h2>
-        </div>
+                <h2>
+                    For gaven i det hele er din indsats som frivillig
+                </h2>
+            </div>
 
-        <div id="accordion"></div>
+            <div id="accordion">
+                <button class="accordion__section" id="section1"><h2>Hvad kan jeg lave?</h2></button>
+                <div class="panel">
+                    <p> Aktiviteterne og opgaverne i lokalafdelingerne er mange og meget varierede, men fælles for lokalafdelingerne er, at meget af den nære og medlemsrettede aktivitet foregår i lokalafdelingerne.
+                        Nedenstående eksempler er blot et udpluk af, hvad du som frivillig i en lokalafdeling kan beskæftige dig med.
+                        <ul>
+                            <li>Forenings- og bestyrelsesarbejde</li>
+                            <li>Planlægning af lokale foredrag og kurser</li>
+                            <li>Frivillig i en af vores mange ADHD-caféer</li>
+                            <li>Politisk arbejde i forskellige råd i kommunerne</li>
+                            <li>Repræsentere ADHD-foreningen i DH i lokalområdet</li>
+                        </ul>
+                    </p>
+                </div>
 
-        <div class="mobileDivider">
-            <h1>
-                KAN DET BLIVE BEDRE? <br>
-                <b>SVARED ER JA!</b> <br>
-            </h1>
+                <button class="accordion__section" id="section2"><h2>Hvordan finder jeg ud af om det er noget for mig?</h2></button>
+                <div class="panel">
+                    <p>
+                        Der er næste ligeså mange gode grunde til at være frivillig i en lokalafdeling som der er frivillige, men fælles for de fleste er, at det er utroligt givende at indgå i et fællesskab som forstår hvad ADHD betyder i hverdagen, og som yder en frivillig indsats i den gode sags tjeneste.
+                        Hvis du ønsker, at være med til at gøre en forskel som frivillig i en af ADHD-foreningens lokalafdelinger, eller blot ønsker at undersøge mulighederne, kan du enten kontakte den nærmeste lokalafdeling, eller ADHD-foreningen på info@adhd.dk
+                    </p>
+                </div>
 
-            <h2>
-                For gaven i det hele er din indsats som frivillig
-            </h2>
-        </div>
+                <button class="accordion__section" id="section3"><h2>Hvad hvis jeg bor langt væk?</h2></button>
+                <div class="panel">
+                    <p>
+                        Hvis du transporterer dig til og fra frivillige aktiviteter i egen bil, har du mulighed for at få kørselsgodtgørelse. 
+                        Kørselsgodtgørelsen afregnes efter statens takster, og taksten reguleres hvert år ved årsskiftet.
+                        I 2025 er statens almindelige takst på kr. 2,23 pr. km for kørsel i egen bil.
+                    </p>
+                </div>
+            </div>
 
-        <hr class="pcDivider">
+            <div class="mobileDivider">
+                <h1>
+                    KAN DET BLIVE BEDRE? <br>
+                    <b>SVARED ER JA!</b> <br>
+                </h1>
 
-        <div id="map"></div>
+                <h2>
+                    For gaven i det hele er din indsats som frivillig
+                </h2>
+            </div>
+
+            <hr class="pcDivider">
+
+                <div id="map"></div>
+        </main>
 
         <footer>
 
