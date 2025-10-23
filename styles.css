@@ -510,9 +510,18 @@ footer {
 
 .eventImg {
     grid-area: img;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
     align-self: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 #eventDetail > * {
@@ -891,9 +900,6 @@ footer {
     }
 
     .eventImg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 30vw;
         max-width: 800px;
         height: 600px;
