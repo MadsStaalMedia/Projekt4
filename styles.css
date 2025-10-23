@@ -398,9 +398,11 @@ footer {
 
 
 .activityBox {
+    box-sizing: border-box;
     background-color: var(--box-color-3);
     width: 100%;
     min-height: 100px;
+    padding: 40px 10%;
 
     h2 {
         font-size: 1.5rem;
@@ -408,10 +410,21 @@ footer {
 }
 
 .signupBox {
+    box-sizing: border-box;
     background-color: var(--box-color-2);
     width: 100%;
     min-height: 100px;
+    padding: 40px 10%;
 }
+
+input[type=text] {
+    width: 80%;
+}
+
+input[tyoe=radio] {
+    width: 80%;
+}
+
 
 .baseGrid {
     display: grid;
