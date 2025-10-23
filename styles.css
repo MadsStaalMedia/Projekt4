@@ -739,14 +739,14 @@ footer {
     }
 
     .footer__branding {
-        margin-left: 10px;
-        margin-top: 190px;
-        margin-bottom: 0;
+        margin-left: 0px;
+        margin-top: 170px;
     }
 
     .footer__some {
+        text-align: right;
         height: 50px;
-        width: 480px;
+        width: 100%;
         margin-right: 10px;
         margin-top: 190px;
         margin-bottom: 0;
