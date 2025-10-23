@@ -489,13 +489,6 @@ footer {
         line-height: normal;
     }
 
-    img {
-        grid-area: img;
-        width: 80%;
-        height: auto;
-        align-self: center;
-    }
-
     eventButtonContainer {
         grid-area: activity;
     }
@@ -520,16 +513,16 @@ footer {
         line-height: normal;
     }
 
-    img {
-        grid-area: img;
-        width: 80%;
-        height: auto;
-        align-self: center;
-    }
-
     eventButtonContainer {
         grid-area: activity;
     }
+}
+
+.eventImg {
+    grid-area: img;
+    width: 80%;
+    height: auto;
+    align-self: center;
 }
 
 #eventDetail > * {
@@ -902,6 +895,14 @@ footer {
         }
     }
 
-    
+    .eventImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30vw;
+        height: 40vw;
+        margin-left: 5vw;
+        overflow: hidden;
+    }
     
 }
