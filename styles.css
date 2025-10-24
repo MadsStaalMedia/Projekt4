@@ -173,6 +173,11 @@ header {
     display: none;
 }
 
+.frontHeader {
+    background-image: url(billeder/baggrund/baggrundsbillede.webp);
+    background-repeat: repeat;
+}
+
 
 footer {
     box-sizing: border-box;
@@ -959,6 +964,8 @@ input[type=submit] {
     .frontHeader {
         height: 630px;
         margin-bottom: 100px;
+        background-image: url(billeder/baggrund/baggrundsbillede.webp);
+        background-repeat: repeat;
     }
 
     .pcDivider {
