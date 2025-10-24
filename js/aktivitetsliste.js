@@ -1,11 +1,11 @@
-const netOd = '<img class="eventButton__img" src="billeder/ikoner/netvaerk1.svg" alt="netærksgruppen odense ikon"><p><b>Netværksgruppen</b> - Odense</p>';
-const streg = '<img class="eventButton__img" src="billeder/ikoner/streger.svg" alt="adhd streger ikon"><p><b>ADHD Streger</b> - Odense</p>';
-const lego = '<img class="eventButton__img" src="billeder/ikoner/lego.svg" alt="lego cafe ikon"><p><b>LEGO Cafe</b> - Bolbro</p>';
-const klub = '<img class="eventButton__img" src="billeder/ikoner/klubben.svg" alt="adhd klubben ikon"><p><b>ADHD Klubben</b> - Middelfart</p>';
-const natur = '<img class="eventButton__img" src="billeder/ikoner/natur.svg" alt="naturgruppen ikon"><p><b>Naturgruppen</b> - Svendborg</p>';
-const netSve = '<img class="eventButton__img" src="billeder/ikoner/netvaerk2.svg" alt="netærksgruppen svendborg ikon"><p><b>Netværksgruppen</b> - Svendborg</p>';
-const cafe = '<img class="eventButton__img" src="billeder/ikoner/cafe.svg" alt="cafe ærø ikon"><p><b>Cafe Ærø</b> - Ærø</p>';
-const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.svg" alt="50+ netværksgruppen ikon"><p><b>50+ Netværksgruppen</b></p>';
+const netOd = '<img class="eventButton__img" src="billeder/ikoner/netvaerk1.svg" alt="netærksgruppen odense ikon"><b>Netværksgruppen</b> - Odense';
+const streg = '<img class="eventButton__img" src="billeder/ikoner/streger.svg" alt="adhd streger ikon"><b>ADHD Streger</b> - Odense';
+const lego = '<img class="eventButton__img" src="billeder/ikoner/lego.svg" alt="lego cafe ikon"><b>LEGO Cafe</b> - Bolbro';
+const klub = '<img class="eventButton__img" src="billeder/ikoner/klubben.svg" alt="adhd klubben ikon"><b>ADHD Klubben</b> - Middelfart';
+const natur = '<img class="eventButton__img" src="billeder/ikoner/natur.svg" alt="naturgruppen ikon"><b>Naturgruppen</b> - Svendborg';
+const netSve = '<img class="eventButton__img" src="billeder/ikoner/netvaerk2.svg" alt="netærksgruppen svendborg ikon"><b>Netværksgruppen</b> - Svendborg';
+const cafe = '<img class="eventButton__img" src="billeder/ikoner/cafe.svg" alt="cafe ærø ikon"><b>Cafe Ærø</b> - Ærø';
+const halvtre = '<img class="eventButton__img" src="billeder/ikoner/tovholder.svg" alt="50+ netværksgruppen ikon"><b>50+ Netværksgruppen</b>';
 
 const events = [netOd, streg, lego, klub, natur, netSve, cafe, halvtre];
 
