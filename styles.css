@@ -134,12 +134,6 @@ p {
     cursor: pointer;
 }
 
-.header__logo {
-    position: relative;
-    left: 10px;
-    
-}
-
 /* Wrapper til hele siden */
 .flexWrapper {
     display: flex;
@@ -800,19 +794,12 @@ input[type=submit] {
         border-radius: 21px;
         background-color: var(--button-color);
         border: none;
-        
-    }
-
-    .header__signup > * {
         font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
         font-weight: 600;
         font-size: 1.2rem;
         color: var(--text-color-4);
         text-decoration: none;
-    }
-
-    .header__signup :hover {
-        text-decoration: underline;
+        
     }
 
     footer {
