@@ -309,16 +309,13 @@ footer {
     border: none;
     border-radius: 21px;
     padding: 16px 26px;
-    margin: 20px 25% 20px;
+    margin: 20px 20% 20px;
     background-color: var(--button-color);
-}
-
-.signup > * {
     font-family: "adelle-sans", "roboto", Helvetica, sans-serif;
+    text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--text-color-4);
-    padding: 16px 8px;
     text-decoration: none;
 }
 
