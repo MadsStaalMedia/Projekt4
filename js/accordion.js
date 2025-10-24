@@ -13,7 +13,7 @@ for (i=0; i < acc.length; i++) {
         let pan = this.nextElementSibling;
 
         if (pan.style.maxHeight) {
-            pan.style.maxHeight = null;
+            pan.style.maxHeight = "";
         } else {
             pan.style.maxHeight = pan.scrollHeight + "px";
         }
