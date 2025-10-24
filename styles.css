@@ -568,7 +568,7 @@ input[type=submit] {
     grid-template-areas: 
     'img'
     'activity';
-    margin: 10px 0;
+    margin: 10px 0 0;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -985,12 +985,12 @@ input[type=submit] {
     .eventImg {
         width: 30vw;
         max-width: 800px;
-        height: 600px;
+        height: 100%;
         margin-left: 5vw;
-        overflow: hidden;
+        overflow-x: hidden;
 
         img {
-            max-height: 800px;
+            max-height: 100%;
             width: auto;
         }
     }
