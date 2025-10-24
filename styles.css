@@ -622,12 +622,6 @@ input[type=submit] {
     flex-direction: column;
     align-items: flex-start;
 
-    h2 {text-align: left;
-        font-size: 1.2rem;
-        line-height: 150%;
-        padding: 0px 5px 0px 10%;
-    }
-
     p {
         padding: 1rem 0px;
     }
@@ -652,12 +646,15 @@ input[type=submit] {
     align-items: center;
     background-color: var(--background-color);
     cursor: pointer;
-    padding: 18px 0px;
+    padding: 30px 0px;
     width: 100%;
     border-style: solid;
     border-width: 1px 0px 1px 0px ;
     outline: none;
     transition: 0.5s;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 150%;
 }
 
 .accordion__section:after {
