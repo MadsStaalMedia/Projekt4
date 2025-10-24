@@ -288,13 +288,14 @@ footer {
 .videoContainer {
     grid-area: video;
     align-self: center;
-    display: grid;
+    display: flex;
+    justify-content: center;
 }
 
 .videoPlay {
-    min-width: 240px;
-    width: 100%;
-    height: auto;
+    max-height: 600px;
+    width: auto;
+    height: 100%;
     margin-bottom: 20px;
 }
 
