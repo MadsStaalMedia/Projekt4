@@ -228,7 +228,6 @@ footer {
 
 /* En farvet cirkel til tekst */
 .contentCircle {
-    align-self: left;
     box-sizing: border-box;
     width: 88%;
     aspect-ratio: 1 / 1;
