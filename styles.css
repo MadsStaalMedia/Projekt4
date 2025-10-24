@@ -548,7 +548,7 @@ input[type=submit] {
     grid-template-areas: 
     'img'
     'activity';
-    margin: 10px 0;
+    margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--box-color-4);
@@ -568,7 +568,7 @@ input[type=submit] {
     grid-template-areas: 
     'img'
     'activity';
-    margin: 10px 0 0;
+    margin:  0;
     padding-top: 20px;
     padding-bottom: 20px;
 
