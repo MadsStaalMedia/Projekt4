@@ -294,6 +294,12 @@ footer {
     align-self: center;
     display: flex;
     justify-content: center;
+
+    iframe {
+        aspect-ratio: 9 / 16;
+        height: 500px;
+        width: auto;
+    }
 }
 
 .signup {
@@ -910,9 +916,12 @@ input[type=submit] {
         }
     }
 
-    .videoPlay {
+    .videoContainer {
+        iframe {
+        aspect-ratio: 9 / 16;
+        height: 600px;
         width: auto;
-        height: 100%;
+        }
     }
 
     .signup {
