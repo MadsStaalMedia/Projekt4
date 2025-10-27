@@ -1,3 +1,4 @@
+// med hjælp fra chapgt til variabler, dom-manipulation og generel forståelse - se bilag "projekts brug af AI"
 // Variabler og typer
 const overlay = document.getElementById("myNav");
 const menuContainer = document.getElementById("menuContainer");
